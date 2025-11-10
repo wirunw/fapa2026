@@ -17,8 +17,10 @@ PAGES_ACTIVE = {
     'keynote.html': ('Program', 'keynote'),
     'invited.html': ('Program', 'invited'),
     'program.html': ('Program', 'program'),
-    'abstracts.html': ('Abstracts', None),
-    'register.html': ('Register', None),
+    'abstracts.html': ('Abstracts', 'abstracts'),
+    'submission.html': ('Abstracts', 'submission'),
+    'register.html': ('Register', 'register'),
+    'registration.html': ('Register', 'registration'),
     'venue.html': ('Venue', 'venue'),
     'accommodation.html': ('Venue', 'accommodation'),
     'thailand.html': ('Venue', 'thailand'),
@@ -76,8 +78,26 @@ def get_desktop_menu(active_section, active_page):
                             <a href="program.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50{get_submenu_class('program')}">Detailed Program</a>
                         </div>
                     </div>
-                    <a href="abstracts.html" class="text-{abstracts_class} hover:text-blue-600 font-medium transition">Abstracts</a>
-                    <a href="register.html" class="text-{register_class} hover:text-blue-600 font-medium transition">Register</a>
+                    <div class="relative dropdown">
+                        <button class="text-{abstracts_class} font-medium flex items-center cursor-pointer">
+                            Abstracts
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-56 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="abstracts.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50{get_submenu_class('abstracts')}">Abstract Guidelines</a>
+                            <a href="submission.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50{get_submenu_class('submission')}">Submit Abstract</a>
+                        </div>
+                    </div>
+                    <div class="relative dropdown">
+                        <button class="text-{register_class} font-medium flex items-center cursor-pointer">
+                            Register
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-56 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="register.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50{get_submenu_class('register')}">Registration Info</a>
+                            <a href="registration.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50{get_submenu_class('registration')}">Register Online</a>
+                        </div>
+                    </div>
                     <div class="relative dropdown">
                         <button class="text-{venue_class} font-medium flex items-center cursor-pointer">
                             Venue
@@ -146,8 +166,17 @@ def get_mobile_menu(active_section, active_page):
                     <a href="program.html" class="block py-2 pl-4 text-{get_mobile_class('Program', 'program')}">Detailed Program</a>
                 </div>
                 
-                <a href="abstracts.html" class="block py-2 text-{get_mobile_class('Abstracts')} border-t pt-2 mt-2">Abstracts</a>
-                <a href="register.html" class="block py-2 text-{get_mobile_class('Register')}">Register</a>
+                <div class="border-t pt-2 mt-2">
+                    <p class="text-xs font-semibold text-gray-500 uppercase mb-1">Abstracts</p>
+                    <a href="abstracts.html" class="block py-2 pl-4 text-{get_mobile_class('Abstracts', 'abstracts')}">Abstract Guidelines</a>
+                    <a href="submission.html" class="block py-2 pl-4 text-{get_mobile_class('Abstracts', 'submission')}">Submit Abstract</a>
+                </div>
+                
+                <div class="border-t pt-2 mt-2">
+                    <p class="text-xs font-semibold text-gray-500 uppercase mb-1">Registration</p>
+                    <a href="register.html" class="block py-2 pl-4 text-{get_mobile_class('Register', 'register')}">Registration Info</a>
+                    <a href="registration.html" class="block py-2 pl-4 text-{get_mobile_class('Register', 'registration')}">Register Online</a>
+                </div>
                 
                 <div class="border-t pt-2 mt-2">
                     <p class="text-xs font-semibold text-gray-500 uppercase mb-1">Venue & Travel</p>

@@ -47,7 +47,7 @@
                     </a>
                 </div>
                 
-                                <!-- Desktop Menu -->
+                                                <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-6">
                     <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
                     <div class="relative dropdown">
@@ -74,8 +74,26 @@
                             <a href="program.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Detailed Program</a>
                         </div>
                     </div>
-                    <a href="abstracts.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Abstracts</a>
-                    <a href="register.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Register</a>
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 font-medium flex items-center cursor-pointer">
+                            Abstracts
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-56 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="abstracts.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Abstract Guidelines</a>
+                            <a href="submission.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Submit Abstract</a>
+                        </div>
+                    </div>
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 font-medium flex items-center cursor-pointer">
+                            Register
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-56 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="register.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Registration Info</a>
+                            <a href="registration.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Register Online</a>
+                        </div>
+                    </div>
                     <div class="relative dropdown">
                         <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">
                             Venue
@@ -114,6 +132,8 @@
 
 
 
+
+
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-button" class="text-gray-700">
@@ -123,7 +143,7 @@
             </div>
         </div>
 
-                <!-- Mobile Menu -->
+                        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
             <div class="px-4 pt-2 pb-4 space-y-2">
                 <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
@@ -144,8 +164,17 @@
                     <a href="program.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Detailed Program</a>
                 </div>
                 
-                <a href="abstracts.html" class="block py-2 text-gray-700 hover:text-blue-600 border-t pt-2 mt-2">Abstracts</a>
-                <a href="register.html" class="block py-2 text-gray-700 hover:text-blue-600">Register</a>
+                <div class="border-t pt-2 mt-2">
+                    <p class="text-xs font-semibold text-gray-500 uppercase mb-1">Abstracts</p>
+                    <a href="abstracts.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Abstract Guidelines</a>
+                    <a href="submission.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Submit Abstract</a>
+                </div>
+                
+                <div class="border-t pt-2 mt-2">
+                    <p class="text-xs font-semibold text-gray-500 uppercase mb-1">Registration</p>
+                    <a href="register.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Registration Info</a>
+                    <a href="registration.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Register Online</a>
+                </div>
                 
                 <div class="border-t pt-2 mt-2">
                     <p class="text-xs font-semibold text-gray-500 uppercase mb-1">Venue & Travel</p>
