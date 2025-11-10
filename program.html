@@ -13,6 +13,7 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+        .dropdown:hover .dropdown-menu { display: block; }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -35,12 +36,12 @@
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
-                    <div class="relative group">
+                    <div class="relative dropdown">
                         <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center">
                             About
                             <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
                         </button>
-                        <div class="absolute hidden group-hover:block w-48 bg-white shadow-xl rounded-lg py-2 mt-2">
+                        <div class="absolute hidden dropdown-menu w-48 bg-white shadow-xl rounded-lg py-2 mt-2">
                             <a href="welcome.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Welcome Messages</a>
                             <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">About FAPA & PAT</a>
                             <a href="committee.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Organizing Committee</a>
@@ -48,12 +49,12 @@
                     </div>
                     <a href="program.html" class="text-blue-600 hover:text-blue-700 font-medium transition">Program</a>
                     <a href="abstracts.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Call for Abstracts</a>
-                    <div class="relative group">
+                    <div class="relative dropdown">
                         <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center">
                             Info
                             <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
                         </button>
-                        <div class="absolute hidden group-hover:block w-48 bg-white shadow-xl rounded-lg py-2 mt-2">
+                        <div class="absolute hidden dropdown-menu w-48 bg-white shadow-xl rounded-lg py-2 mt-2">
                             <a href="venue.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Venue & Travel</a>
                             <a href="sponsors.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Sponsors & Events</a>
                         </div>

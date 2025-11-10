@@ -13,6 +13,7 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         html { scroll-behavior: smooth; }
+        .dropdown:hover .dropdown-menu { display: block; }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -25,11 +26,11 @@
             
             <ul class="hidden md:flex items-center space-x-4 text-sm">
                 <li><a href="index.html" class="text-blue-700 font-semibold">Home</a></li>
-                <li class="relative group">
-                    <a href="about.html" class="text-gray-600 hover:text-blue-700 flex items-center gap-1">
+                <li class="relative dropdown">
+                    <button class="text-gray-600 hover:text-blue-700 flex items-center gap-1">
                         About <i data-lucide="chevron-down" class="w-4 h-4"></i>
-                    </a>
-                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 py-2 w-48 z-50">
+                    </button>
+                    <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-lg mt-2 py-2 w-48 z-50">
                         <a href="about.html" class="block px-4 py-2 hover:bg-gray-100">About FAPA & PAT</a>
                         <a href="welcome.html" class="block px-4 py-2 hover:bg-gray-100">Welcome Messages</a>
                         <a href="committee.html" class="block px-4 py-2 hover:bg-gray-100">Committee</a>
