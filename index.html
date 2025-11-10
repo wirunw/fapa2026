@@ -35,44 +35,75 @@
 </head>
 <body class="bg-gray-100">
 
-    <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div><a href="index.html" class="text-2xl font-bold text-blue-800">FAPA 2026</a></div>
-            <button id="mobile-menu-button" class="md:hidden"><i data-lucide="menu" class="w-6 h-6"></i></button>
-            
-            <ul class="hidden md:flex items-center space-x-4 text-sm">
-                <li><a href="index.html" class="text-blue-700 font-semibold">Home</a></li>
-                <li class="relative dropdown">
-                    <button class="text-gray-600 hover:text-blue-700 flex items-center gap-1 cursor-pointer">
-                        About <i data-lucide="chevron-down" class="w-4 h-4"></i>
-                    </button>
-                    <div class="dropdown-menu absolute left-0 bg-white shadow-lg rounded-lg mt-0 py-2 w-48 z-50">
-                        <a href="about.html" class="block px-4 py-2 hover:bg-gray-100 text-gray-700">About FAPA & PAT</a>
-                        <a href="welcome.html" class="block px-4 py-2 hover:bg-gray-100 text-gray-700">Welcome Messages</a>
-                        <a href="committee.html" class="block px-4 py-2 hover:bg-gray-100 text-gray-700">Committee</a>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">FAPA</span>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">FAPA 2026</div>
+                            <div class="text-xs text-gray-600">November 3-7, 2026</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-blue-600 hover:text-blue-700 font-medium transition">Home</a>
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">
+                            About
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="welcome.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Welcome Messages</a>
+                            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">About FAPA & PAT</a>
+                            <a href="committee.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Organizing Committee</a>
+                        </div>
                     </div>
-                </li>
-                <li><a href="program.html" class="text-gray-600 hover:text-blue-700">Program</a></li>
-                <li><a href="abstracts.html" class="text-gray-600 hover:text-blue-700">Abstracts</a></li>
-                <li><a href="venue.html" class="text-gray-600 hover:text-blue-700">Venue</a></li>
-                <li><a href="sponsors.html" class="text-gray-600 hover:text-blue-700">Sponsors</a></li>
-                <li><a href="register.html" class="bg-yellow-500 text-yellow-900 px-4 py-2 rounded-full font-medium hover:bg-yellow-400 transition duration-300">Register</a></li>
-            </ul>
-        </nav>
-        
-        <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2">
-            <a href="index.html" class="block text-blue-700 font-semibold">Home</a>
-            <a href="about.html" class="block text-gray-600 hover:text-blue-700">About</a>
-            <a href="welcome.html" class="block text-gray-600 hover:text-blue-700 pl-4">Welcome Messages</a>
-            <a href="committee.html" class="block text-gray-600 hover:text-blue-700 pl-4">Committee</a>
-            <a href="program.html" class="block text-gray-600 hover:text-blue-700">Program</a>
-            <a href="abstracts.html" class="block text-gray-600 hover:text-blue-700">Abstracts</a>
-            <a href="venue.html" class="block text-gray-600 hover:text-blue-700">Venue</a>
-            <a href="sponsors.html" class="block text-gray-600 hover:text-blue-700">Sponsors</a>
-            <a href="register.html" class="block bg-yellow-500 text-yellow-900 px-4 py-2 rounded-full text-center">Register</a>
+                    <a href="program.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Program</a>
+                    <a href="abstracts.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Call for Abstracts</a>
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">
+                            Info
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="venue.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Venue & Travel</a>
+                            <a href="sponsors.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Sponsors & Events</a>
+                        </div>
+                    </div>
+                    <a href="register.html" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition font-medium">Register</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-    </header>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-blue-600 font-medium">Home</a>
+                <a href="welcome.html" class="block py-2 text-gray-700 hover:text-blue-600">Welcome Messages</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">About FAPA & PAT</a>
+                <a href="committee.html" class="block py-2 text-gray-700 hover:text-blue-600">Organizing Committee</a>
+                <a href="program.html" class="block py-2 text-gray-700 hover:text-blue-600">Program</a>
+                <a href="abstracts.html" class="block py-2 text-gray-700 hover:text-blue-600">Call for Abstracts</a>
+                <a href="venue.html" class="block py-2 text-gray-700 hover:text-blue-600">Venue & Travel</a>
+                <a href="sponsors.html" class="block py-2 text-gray-700 hover:text-blue-600">Sponsors & Events</a>
+                <a href="register.html" class="block py-2 bg-blue-600 text-white text-center rounded-full hover:bg-blue-700">Register</a>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="relative bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 text-white py-20 md:py-32">
