@@ -49,34 +49,72 @@
                     </a>
                 </div>
                 
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8">
+                                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-6">
                     <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
                     <div class="relative dropdown">
                         <button class="text-blue-600 hover:text-blue-700 font-medium flex items-center cursor-pointer">
                             About
                             <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
                         </button>
-                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-0">
+                        <div class="dropdown-menu absolute left-0 w-56 bg-white shadow-xl rounded-lg py-2 mt-0">
                             <a href="welcome.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 bg-blue-50">Welcome Messages</a>
                             <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">About FAPA & PAT</a>
                             <a href="committee.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Organizing Committee</a>
                         </div>
                     </div>
-                    <a href="program.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Program</a>
-                    <a href="abstracts.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Call for Abstracts</a>
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">
+                            Program
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-56 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="theme.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Theme & Topics</a>
+                            <a href="schedule.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Program at a Glance</a>
+                            <a href="keynote.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Keynote Speakers</a>
+                            <a href="invited.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Invited Speakers</a>
+                            <a href="program.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Detailed Program</a>
+                        </div>
+                    </div>
+                    <a href="abstracts.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Abstracts</a>
+                    <a href="register.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Register</a>
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">
+                            Venue
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-56 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="venue.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Conference Venue</a>
+                            <a href="accommodation.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Accommodation</a>
+                            <a href="thailand.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">About Thailand</a>
+                        </div>
+                    </div>
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">
+                            Sponsors
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-56 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="sponsors.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Sponsorship & Exhibition</a>
+                            <a href="socialevents.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Social Events</a>
+                            <a href="tours.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Tours</a>
+                        </div>
+                    </div>
                     <div class="relative dropdown">
                         <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">
                             Info
                             <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
                         </button>
-                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-0">
-                            <a href="venue.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Venue & Travel</a>
-                            <a href="sponsors.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Sponsors & Events</a>
+                        <div class="dropdown-menu absolute left-0 w-56 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="news.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">News & Updates</a>
+                            <a href="faq.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">FAQ</a>
+                            <a href="students.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Student Assistants</a>
+                            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Contact Us</a>
                         </div>
                     </div>
-                    <a href="register.html" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition font-medium">Register</a>
                 </div>
+
+
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
@@ -87,18 +125,51 @@
             </div>
         </div>
 
-        <!-- Mobile Menu -->
+                <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
             <div class="px-4 pt-2 pb-4 space-y-2">
                 <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
-                <a href="welcome.html" class="block py-2 text-blue-600 font-medium">Welcome Messages</a>
-                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">About FAPA & PAT</a>
-                <a href="committee.html" class="block py-2 text-gray-700 hover:text-blue-600">Organizing Committee</a>
-                <a href="program.html" class="block py-2 text-gray-700 hover:text-blue-600">Program</a>
-                <a href="abstracts.html" class="block py-2 text-gray-700 hover:text-blue-600">Call for Abstracts</a>
-                <a href="venue.html" class="block py-2 text-gray-700 hover:text-blue-600">Venue & Travel</a>
-                <a href="sponsors.html" class="block py-2 text-gray-700 hover:text-blue-600">Sponsors & Events</a>
-                <a href="register.html" class="block py-2 bg-blue-600 text-white text-center rounded-full hover:bg-blue-700">Register</a>
+                
+                <div class="border-t pt-2 mt-2">
+                    <p class="text-xs font-semibold text-gray-500 uppercase mb-1">About</p>
+                    <a href="welcome.html" class="block py-2 pl-4 text-blue-600 font-medium">Welcome Messages</a>
+                    <a href="about.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">About FAPA & PAT</a>
+                    <a href="committee.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Organizing Committee</a>
+                </div>
+                
+                <div class="border-t pt-2 mt-2">
+                    <p class="text-xs font-semibold text-gray-500 uppercase mb-1">Program</p>
+                    <a href="theme.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Theme & Topics</a>
+                    <a href="schedule.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Program at a Glance</a>
+                    <a href="keynote.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Keynote Speakers</a>
+                    <a href="invited.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Invited Speakers</a>
+                    <a href="program.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Detailed Program</a>
+                </div>
+                
+                <a href="abstracts.html" class="block py-2 text-gray-700 hover:text-blue-600 border-t pt-2 mt-2">Abstracts</a>
+                <a href="register.html" class="block py-2 text-gray-700 hover:text-blue-600">Register</a>
+                
+                <div class="border-t pt-2 mt-2">
+                    <p class="text-xs font-semibold text-gray-500 uppercase mb-1">Venue & Travel</p>
+                    <a href="venue.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Conference Venue</a>
+                    <a href="accommodation.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Accommodation</a>
+                    <a href="thailand.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">About Thailand</a>
+                </div>
+                
+                <div class="border-t pt-2 mt-2">
+                    <p class="text-xs font-semibold text-gray-500 uppercase mb-1">Sponsors & Events</p>
+                    <a href="sponsors.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Sponsorship & Exhibition</a>
+                    <a href="socialevents.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Social Events</a>
+                    <a href="tours.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Tours</a>
+                </div>
+                
+                <div class="border-t pt-2 mt-2">
+                    <p class="text-xs font-semibold text-gray-500 uppercase mb-1">Information</p>
+                    <a href="news.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">News & Updates</a>
+                    <a href="faq.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">FAQ</a>
+                    <a href="students.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Student Assistants</a>
+                    <a href="contact.html" class="block py-2 pl-4 text-gray-700 hover:text-blue-600">Contact Us</a>
+                </div>
             </div>
         </div>
     </nav>
