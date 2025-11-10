@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program at a Glance | FAPA 2026 Congress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .dropdown-menu {
+            display: none;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block !important;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            right: 0;
+            height: 8px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <img src="https://i.postimg.cc/Dw4yGkgJ/FAPA-logo.jpg" alt="FAPA Logo" class="h-12 w-auto">
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">FAPA 2026</div>
+                            <div class="text-xs text-gray-600">November 3-7, 2026</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">
+                            About
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="welcome.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Welcome Messages</a>
+                            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">About FAPA & PAT</a>
+                            <a href="committee.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Organizing Committee</a>
+                        </div>
+                    </div>
+                    <a href="program.html" class="text-blue-600 hover:text-blue-700 font-medium transition">Program</a>
+                    <a href="abstracts.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Call for Abstracts</a>
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">
+                            Info
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="venue.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Venue & Travel</a>
+                            <a href="sponsors.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Sponsors & Events</a>
+                        </div>
+                    </div>
+                    <a href="register.html" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition font-medium">Register</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="welcome.html" class="block py-2 text-gray-700 hover:text-blue-600">Welcome Messages</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">About FAPA & PAT</a>
+                <a href="committee.html" class="block py-2 text-gray-700 hover:text-blue-600">Organizing Committee</a>
+                <a href="program.html" class="block py-2 text-blue-600 font-medium">Program</a>
+                <a href="abstracts.html" class="block py-2 text-gray-700 hover:text-blue-600">Call for Abstracts</a>
+                <a href="venue.html" class="block py-2 text-gray-700 hover:text-blue-600">Venue & Travel</a>
+                <a href="sponsors.html" class="block py-2 text-gray-700 hover:text-blue-600">Sponsors & Events</a>
+                <a href="register.html" class="block py-2 bg-blue-600 text-white text-center rounded-full hover:bg-blue-700">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Program at a Glance</h1>
+                <p class="text-xl text-blue-100">5-Day Scientific Program Overview</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Schedule Overview -->
+            <div class="mb-12 bg-white rounded-xl shadow-lg p-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">November 3-7, 2026</h2>
+                    <p class="text-lg text-gray-600">Impact Muangthong Thani, Nonthaburi, Thailand</p>
+                </div>
+
+                <!-- Desktop Schedule Table -->
+                <div class="hidden lg:block overflow-x-auto">
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+                                <th class="p-4 text-left w-32">Time</th>
+                                <th class="p-4 text-center">Day 1<br><span class="text-sm font-normal">Monday, Nov 3</span></th>
+                                <th class="p-4 text-center">Day 2<br><span class="text-sm font-normal">Tuesday, Nov 4</span></th>
+                                <th class="p-4 text-center">Day 3<br><span class="text-sm font-normal">Wednesday, Nov 5</span></th>
+                                <th class="p-4 text-center">Day 4<br><span class="text-sm font-normal">Thursday, Nov 6</span></th>
+                                <th class="p-4 text-center">Day 5<br><span class="text-sm font-normal">Friday, Nov 7</span></th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm">
+                            <tr class="border-b">
+                                <td class="p-3 font-semibold bg-gray-50">08:00-09:00</td>
+                                <td class="p-3 text-center bg-blue-50">Registration</td>
+                                <td class="p-3 text-center bg-green-50">Plenary Session 2</td>
+                                <td class="p-3 text-center bg-green-50">Plenary Session 3</td>
+                                <td class="p-3 text-center bg-green-50">Plenary Session 4</td>
+                                <td class="p-3 text-center bg-green-50">Plenary Session 5</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3 font-semibold bg-gray-50">09:00-10:30</td>
+                                <td class="p-3 text-center bg-purple-50">Opening Ceremony</td>
+                                <td class="p-3 text-center bg-yellow-50">Symposium A1-A3</td>
+                                <td class="p-3 text-center bg-yellow-50">Symposium B1-B3</td>
+                                <td class="p-3 text-center bg-yellow-50">Symposium C1-C3</td>
+                                <td class="p-3 text-center bg-yellow-50">Symposium D1-D3</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3 font-semibold bg-gray-50">10:30-11:00</td>
+                                <td class="p-3 text-center bg-gray-100" colspan="5">Coffee Break</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3 font-semibold bg-gray-50">11:00-12:30</td>
+                                <td class="p-3 text-center bg-green-50">Keynote Address 1</td>
+                                <td class="p-3 text-center bg-pink-50">Workshop 1-4</td>
+                                <td class="p-3 text-center bg-pink-50">Workshop 5-8</td>
+                                <td class="p-3 text-center bg-pink-50">Workshop 9-12</td>
+                                <td class="p-3 text-center bg-purple-50">Closing Ceremony</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3 font-semibold bg-gray-50">12:30-13:30</td>
+                                <td class="p-3 text-center bg-gray-100" colspan="5">Lunch Break</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3 font-semibold bg-gray-50">13:30-15:00</td>
+                                <td class="p-3 text-center bg-yellow-50">Symposium 1-3</td>
+                                <td class="p-3 text-center bg-orange-50">Oral Presentations A</td>
+                                <td class="p-3 text-center bg-orange-50">Oral Presentations B</td>
+                                <td class="p-3 text-center bg-orange-50">Oral Presentations C</td>
+                                <td class="p-3 text-center">-</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3 font-semibold bg-gray-50">15:00-15:30</td>
+                                <td class="p-3 text-center bg-gray-100" colspan="5">Coffee Break</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3 font-semibold bg-gray-50">15:30-17:00</td>
+                                <td class="p-3 text-center bg-teal-50">Poster Session 1</td>
+                                <td class="p-3 text-center bg-teal-50">Poster Session 2</td>
+                                <td class="p-3 text-center bg-teal-50">Poster Session 3</td>
+                                <td class="p-3 text-center bg-yellow-50">Young Pharmacist Forum</td>
+                                <td class="p-3 text-center">-</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-semibold bg-gray-50">19:00-21:00</td>
+                                <td class="p-3 text-center bg-indigo-50">Welcome Reception</td>
+                                <td class="p-3 text-center">-</td>
+                                <td class="p-3 text-center bg-red-50">Cultural Night</td>
+                                <td class="p-3 text-center bg-pink-50">Gala Dinner</td>
+                                <td class="p-3 text-center">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Mobile Schedule -->
+                <div class="lg:hidden space-y-6">
+                    <!-- Day 1 -->
+                    <div class="bg-white border-2 border-blue-200 rounded-lg p-4">
+                        <h3 class="text-xl font-bold text-blue-600 mb-3">Day 1 - Monday, November 3</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex"><span class="font-semibold w-24">08:00-09:00</span><span>Registration</span></div>
+                            <div class="flex"><span class="font-semibold w-24">09:00-10:30</span><span>Opening Ceremony</span></div>
+                            <div class="flex"><span class="font-semibold w-24">10:30-11:00</span><span>Coffee Break</span></div>
+                            <div class="flex"><span class="font-semibold w-24">11:00-12:30</span><span>Keynote Address 1</span></div>
+                            <div class="flex"><span class="font-semibold w-24">12:30-13:30</span><span>Lunch Break</span></div>
+                            <div class="flex"><span class="font-semibold w-24">13:30-15:00</span><span>Symposium 1-3</span></div>
+                            <div class="flex"><span class="font-semibold w-24">15:00-15:30</span><span>Coffee Break</span></div>
+                            <div class="flex"><span class="font-semibold w-24">15:30-17:00</span><span>Poster Session 1</span></div>
+                            <div class="flex"><span class="font-semibold w-24">19:00-21:00</span><span>Welcome Reception</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Day 2-5 similar structure -->
+                    <div class="bg-white border-2 border-green-200 rounded-lg p-4">
+                        <h3 class="text-xl font-bold text-green-600 mb-3">Day 2 - Tuesday, November 4</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex"><span class="font-semibold w-24">08:00-09:00</span><span>Plenary Session 2</span></div>
+                            <div class="flex"><span class="font-semibold w-24">09:00-10:30</span><span>Symposium A1-A3</span></div>
+                            <div class="flex"><span class="font-semibold w-24">10:30-11:00</span><span>Coffee Break</span></div>
+                            <div class="flex"><span class="font-semibold w-24">11:00-12:30</span><span>Workshop 1-4</span></div>
+                            <div class="flex"><span class="font-semibold w-24">12:30-13:30</span><span>Lunch Break</span></div>
+                            <div class="flex"><span class="font-semibold w-24">13:30-15:00</span><span>Oral Presentations A</span></div>
+                            <div class="flex"><span class="font-semibold w-24">15:00-15:30</span><span>Coffee Break</span></div>
+                            <div class="flex"><span class="font-semibold w-24">15:30-17:00</span><span>Poster Session 2</span></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border-2 border-purple-200 rounded-lg p-4">
+                        <h3 class="text-xl font-bold text-purple-600 mb-3">Day 3 - Wednesday, November 5</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex"><span class="font-semibold w-24">08:00-09:00</span><span>Plenary Session 3</span></div>
+                            <div class="flex"><span class="font-semibold w-24">09:00-10:30</span><span>Symposium B1-B3</span></div>
+                            <div class="flex"><span class="font-semibold w-24">10:30-11:00</span><span>Coffee Break</span></div>
+                            <div class="flex"><span class="font-semibold w-24">11:00-12:30</span><span>Workshop 5-8</span></div>
+                            <div class="flex"><span class="font-semibold w-24">12:30-13:30</span><span>Lunch Break</span></div>
+                            <div class="flex"><span class="font-semibold w-24">13:30-15:00</span><span>Oral Presentations B</span></div>
+                            <div class="flex"><span class="font-semibold w-24">15:00-15:30</span><span>Coffee Break</span></div>
+                            <div class="flex"><span class="font-semibold w-24">15:30-17:00</span><span>Poster Session 3</span></div>
+                            <div class="flex"><span class="font-semibold w-24">19:00-21:00</span><span>Cultural Night</span></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border-2 border-red-200 rounded-lg p-4">
+                        <h3 class="text-xl font-bold text-red-600 mb-3">Day 4 - Thursday, November 6</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex"><span class="font-semibold w-24">08:00-09:00</span><span>Plenary Session 4</span></div>
+                            <div class="flex"><span class="font-semibold w-24">09:00-10:30</span><span>Symposium C1-C3</span></div>
+                            <div class="flex"><span class="font-semibold w-24">10:30-11:00</span><span>Coffee Break</span></div>
+                            <div class="flex"><span class="font-semibold w-24">11:00-12:30</span><span>Workshop 9-12</span></div>
+                            <div class="flex"><span class="font-semibold w-24">12:30-13:30</span><span>Lunch Break</span></div>
+                            <div class="flex"><span class="font-semibold w-24">13:30-15:00</span><span>Oral Presentations C</span></div>
+                            <div class="flex"><span class="font-semibold w-24">15:00-15:30</span><span>Coffee Break</span></div>
+                            <div class="flex"><span class="font-semibold w-24">15:30-17:00</span><span>Young Pharmacist Forum</span></div>
+                            <div class="flex"><span class="font-semibold w-24">19:00-21:00</span><span>Gala Dinner</span></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border-2 border-yellow-200 rounded-lg p-4">
+                        <h3 class="text-xl font-bold text-yellow-600 mb-3">Day 5 - Friday, November 7</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex"><span class="font-semibold w-24">08:00-09:00</span><span>Plenary Session 5</span></div>
+                            <div class="flex"><span class="font-semibold w-24">09:00-10:30</span><span>Symposium D1-D3</span></div>
+                            <div class="flex"><span class="font-semibold w-24">10:30-11:00</span><span>Coffee Break</span></div>
+                            <div class="flex"><span class="font-semibold w-24">11:00-12:30</span><span>Closing Ceremony</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legend -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Session Types</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="flex items-center">
+                        <div class="w-6 h-6 bg-green-200 rounded mr-2"></div>
+                        <span class="text-sm">Plenary Sessions</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-6 h-6 bg-yellow-200 rounded mr-2"></div>
+                        <span class="text-sm">Symposia</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-6 h-6 bg-pink-200 rounded mr-2"></div>
+                        <span class="text-sm">Workshops</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-6 h-6 bg-orange-200 rounded mr-2"></div>
+                        <span class="text-sm">Oral Presentations</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-6 h-6 bg-teal-200 rounded mr-2"></div>
+                        <span class="text-sm">Poster Sessions</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-6 h-6 bg-purple-200 rounded mr-2"></div>
+                        <span class="text-sm">Special Events</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-6 h-6 bg-indigo-200 rounded mr-2"></div>
+                        <span class="text-sm">Social Events</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-6 h-6 bg-gray-200 rounded mr-2"></div>
+                        <span class="text-sm">Breaks</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Notes -->
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-lg mb-12">
+                <div class="flex">
+                    <i data-lucide="info" class="w-6 h-6 text-yellow-600 mr-3 flex-shrink-0"></i>
+                    <div>
+                        <h4 class="font-bold text-yellow-800 mb-2">Important Notes</h4>
+                        <ul class="text-sm text-yellow-700 space-y-1">
+                            <li>• This is a preliminary schedule and subject to change</li>
+                            <li>• Detailed program with session titles and speakers will be announced soon</li>
+                            <li>• Registration desk will be open from 08:00-18:00 daily</li>
+                            <li>• Exhibition area will be open throughout the congress</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-xl p-8 text-white text-center">
+                <h3 class="text-2xl font-bold mb-4">Download Full Program</h3>
+                <p class="mb-6">Get the detailed program book with all session information</p>
+                <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition inline-flex items-center">
+                    <i data-lucide="download" class="w-5 h-5 mr-2"></i>
+                    Coming Soon
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">FAPA 2026</h3>
+                    <p class="text-sm">The 27th FAPA Congress in Bangkok, Thailand</p>
+                    <p class="text-sm mt-2">November 3-7, 2026</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="program.html" class="hover:text-white">Program</a></li>
+                        <li><a href="abstracts.html" class="hover:text-white">Abstracts</a></li>
+                        <li><a href="register.html" class="hover:text-white">Register</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Information</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="venue.html" class="hover:text-white">Venue</a></li>
+                        <li><a href="sponsors.html" class="hover:text-white">Sponsors</a></li>
+                        <li><a href="committee.html" class="hover:text-white">Committee</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <p class="text-sm">The Pharmacy Association of Thailand</p>
+                    <p class="text-sm mt-2">Email: info@pat.or.th</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2026 FAPA Congress. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
