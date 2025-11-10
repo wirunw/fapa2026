@@ -1,0 +1,359 @@
+FAPA 2026 Website Sitemap (แผนผังโครงสร้างเว็บไซต์)
+นี่คือโครงสร้างแผนผังเว็บไซต์ที่อิงตามแผนเนื้อหา 24 หน้า โดยแบ่งตามลำดับชั้นของเมนูหลัก (L1) และเมนูย่อย (L2) เพื่อใช้ในการออกแบบ Navigation Bar
+L1: หน้าหลัก (Home)
+(Page 1: หน้าหลัก)
+L1: เกี่ยวกับ (About)
+L2: เกี่ยวกับ FAPA (About FAPA) (Page 2)
+L2: เกี่ยวกับเจ้าภาพ - PAT (About the Host - PAT) (Page 3)
+L2: สารต้อนรับ (Welcome Messages) (Page 4)
+L2: คณะกรรมการจัดงาน (Organizing Committee) (Page 5)
+L1: โปรแกรม (Program)
+L2: ธีมและหัวข้อ (Theme & Topics) (Page 6)
+L2: ภาพรวมโปรแกรม (Program at a Glance) (Page 7)
+L2: วิทยากรหลัก (Keynote Speakers) (Page 8)
+L2: วิทยากรรับเชิญ (Invited Speakers) (Page 9)
+L2: รายละเอียดโปรแกรม (Detailed Program) (Page 10)
+L1: บทคัดย่อ (Abstracts)
+L2: เชิญชวนส่งบทคัดย่อ (Call for Abstracts) (Page 11)
+L2: การส่งบทคัดย่อ (Abstract Submission) (Page 12)
+L1: การลงทะเบียน (Registration)
+L2: ข้อมูลการลงทะเบียน (Registration Info) (Page 13)
+L2: ลงทะเบียนออนไลน์ (Online Registration) (Page 14)
+L1: สถานที่และการเดินทาง (Venue & Travel)
+L2: สถานที่จัดงาน (Conference Venue) (Page 15)
+L2: ที่พัก (Accommodation) (Page 16)
+L2: เกี่ยวกับประเทศไทย/พัทยา (About Thailand/Pattaya) (Page 17)
+L1: ผู้สนับสนุนและกิจกรรม (Sponsors & Events)
+L2: ผู้สนับสนุนและผู้จัดแสดง (Sponsorship & Exhibition) (Page 18)
+L2: กิจกรรมสังสรรค์ (Social Events) (Page 19)
+L2: ทัวร์ (Educational & Optional Tours) (Page 20)
+L1: ข้อมูล (Info / More)
+L2: ข่าวสาร (News & Updates) (Page 22)
+L2: คำถามที่พบบ่อย (FAQ) (Page 23)
+L2: ผู้ช่วยนักศึกษา (Student Assistants) (Page 21)
+L1: ติดต่อเรา (Contact Us)
+(Page 24: ติดต่อเรา)
+แผนโครงสร้างเนื้อหา (Content Structure Plan) สำหรับเว็บไซต์ FAPA 2026
+อ้างอิง: โครงสร้างจาก FAPA 2023 และข้อมูลเบื้องต้นจาก "Progress Update from the Pharmaceutical Association of Thailand (PAT) Local Organizing Committee (LOC)2.pdf"
+
+ส่วนที่ 1: ข้อมูลหลักและการต้อนรับ (General Information & Welcome)
+1. หน้าหลัก (Home Page)
+วัตถุประสงค์: เป็นหน้าตาหลักของงาน สร้างความประทับใจแรกเห็น สรุปข้อมูลสำคัญที่สุด (Key Information) และกระตุ้นให้ผู้เข้าชมดำเนินการต่อ (Call to Action)
+องค์ประกอบเนื้อหา (Components):
+Main Banner (รูปภาพ/วิดีโอ) ที่สื่อถึงความเป็นไทยและธีมงาน
+ธีมหลักของงาน (Main Theme)
+วันและสถานที่จัดงาน (Date & Venue)
+ปุ่ม Call to Action ที่สำคัญ (เช่น "Register Now", "Call for Abstracts")
+ข้อมูลนับถอยหลัง (Countdown Timer)
+ข่าวประชาสัมพันธ์ล่าสุด (Latest News)
+รายชื่อผู้สนับสนุนหลัก (Key Sponsors)
+ข้อมูลจาก FAPA 2026 (จาก PDF):
+Theme: "Advancing Pharmacy through Innovation, Collaboration, and Sustainability"
+Date: November 3-7, 2026
+Venue: Impact Muangthong Thani, Nonthaburi 
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[รูปภาพ หรือ วิดีโอ Key Visual หลักสำหรับ Banner]
+[ข้อความต้อนรับสั้นๆ (Welcome Note) สำหรับหน้าแรก]
+[กำหนดการสำคัญ (Key Dates) เช่น วันเปิดลงทะเบียน, วันปิดรับบทคัดย่อ]
+[โลโก้ผู้สนับสนุน (หากเริ่มมี)]
+
+2. เกี่ยวกับ FAPA (About FAPA)
+วัตถุประสงค์: แนะนำองค์กร Federation of Asian Pharmaceutical Associations (FAPA) ให้ผู้เข้าร่วม (โดยเฉพาะผู้ที่มาครั้งแรก) ได้รู้จัก
+องค์ประกอบเนื้อหา (Components):
+ประวัติความเป็นมาของ FAPA (History)
+พันธกิจและวิสัยทัศน์ (Mission & Vision)
+โครงสร้างองค์กร (Structure / Bureau)
+ข้อมูลจาก FAPA 2026 (จาก PDF): (หน้านี้ใช้ข้อมูลมาตรฐานจาก FAPAกลาง)
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[เนื้อหามาตรฐานเกี่ยวกับ FAPA (ประสานงาน FAPA Secretariat เพื่อขอข้อมูลล่าสุด)]
+
+3. เกี่ยวกับเจ้าภาพ (About the Host - PAT)
+วัตถุประสงค์: แนะนำสมาคมเภสัชกรรมแห่งประเทศไทยในพระบรมราชูปถัมภ์ (PAT) ในฐานะเจ้าภาพจัดงาน
+องค์ประกอบเนื้อหา (Components):
+ประวัติความเป็นมาของ PAT
+บทบาทและพันธกิจของ PAT ต่อวิชาชีพเภสัชกรรมในไทย
+ลิงก์ไปยังเว็บไซต์หลักของ PAT
+ข้อมูลจาก FAPA 2026 (จาก PDF):
+Website: www.pat.or.th
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[เนื้อหาประวัติและพันธกิจ PAT (ฉบับภาษาอังกฤษ)]
+[รูปภาพที่เกี่ยวข้องกับกิจกรรมของ PAT]
+
+4. สารต้อนรับ (Welcome Messages)
+วัตถุประสงค์: แสดงการต้อนรับอย่างเป็นทางการจากบุคคลสำคัญ
+องค์ประกอบเนื้อหา (Components): (แยกเป็นหน้าย่อย หรือรวมในหน้าเดียว)
+Message from FAPA President
+Message from PAT President
+Message from LOC Chairperson
+(อาจมี) Message from Minister of Public Health (รัฐมนตรีว่าการกระทรวงสาธารณสุข)
+ข้อมูลจาก FAPA 2026 (จาก PDF):
+PAT President: Dr. Suvit Teerakulchon
+LOC Chairperson: Prof.Dr. Pornsak Sriamornsak
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[รูปภาพถ่ายทางการ (Portrait) ของบุคคลสำคัญ]
+[จดหมายต้อนรับ (Text) จากแต่ละท่าน (ทั้งภาษาไทยและอังกฤษ)]
+
+5. คณะกรรมการจัดงาน (Organizing Committee)
+วัตถุประสงค์: แนะนำคณะกรรมการดำเนินงาน (Local Organizing Committee - LOC) และคณะกรรมการฝ่ายต่างๆ
+องค์ประกอบเนื้อหา (Components):
+รายชื่อ ที่ปรึกษา (Advisors)
+รายชื่อ คณะกรรมการกลาง (LOC)
+รายชื่อ ประธานอนุกรรมการฝ่ายต่างๆ (Subcommittee Chairs)
+ข้อมูลจาก FAPA 2026 (จาก PDF - Page 2):
+Chairperson: Prof.Dr. Pornsak Sriamornsak
+Vice Chairperson and Conference Secretariat: Assoc. Prof. Dr. Kampanart Huanbutta
+Reception and Social Events: Ms. Waranyu Lengviriyakul
+Scientific Program: Dr. Duangratana Shuwisitkul
+Finance and Budget: Mrs. Sureerat Tangsangsaksri
+Fundraising, Sponsorship, and Exhibition: Mr. Padoongyost Pisuthadamongkol
+Public Relations and Media: Mr. Virun Vejasiri
+Registration: Ms. Phatree Sinanantapat
+Venue, Accommodation, and Logistics: Mr. Kamolsak Rueangcharoenrung
+Educational Tours: Ms. Napapat Suthammanapong
+Student Assistant Management: Asst. Prof. Dr. Chaowalit Monton
+Safety and Health: Ms. Rungnapa Methmutha
+Monitoring and Evaluation: Mr. Sutthipong Noorit
+Committee Member and Secretary: Asst. Prof. Prasitthichai Poonphol
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[รูปภาพ, ตำแหน่ง, และสังกัด ของคณะกรรมการทุกท่าน (หากต้องการใส่)]
+[รายชื่อคณะกรรมการฝ่ายวิชาการ (Scientific Committee) (หากแยกจาก LOC)]
+
+ส่วนที่ 2: โปรแกรมวิชาการ (Scientific Program)
+
+6. ธีมและหัวข้อย่อย (Theme & Topics)
+วัตถุประสงค์: สื่อสารหัวใจหลักของการประชุมวิชาการ
+องค์ประกอบเนื้อหา (Components):
+อธิบายแนวคิดของธีมหลัก (Concept of the Main Theme)
+รายการหัวข้อย่อย (List of Sub-themes / Topics) ที่จะครอบคลุมในงาน
+ข้อมูลจาก FAPA 2026 (จาก PDF):
+Theme: "Advancing Pharmacy through Innovation, Collaboration, and Sustainability"
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[คำอธิบายขยายความธีมหลัก (Theme Description)]
+[รายการหัวข้อย่อย (List of Scientific Topics) ที่สอดคล้องกับธีม]
+
+7. ภาพรวมโปรแกรม (Program at a Glance)
+วัตถุประสงค์: ให้ผู้เข้าร่วมเห็นภาพรวมของกำหนดการตลอดทั้งงาน (5 วัน) ในรูปแบบตารางที่เข้าใจง่าย
+องค์ประกอบเนื้อหา (Components):
+ตารางสรุป (Grid/Table) แบ่งตามวันและเวลา
+ระบุช่วงเวลาสำหรับ Plenary, Symposiums, Workshops, Oral/Poster Sessions, และ Social Events
+ข้อมูลจาก FAPA 2026 (จาก PDF):
+Date: November 21-25, 2026
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[ร่างกำหนดการหลัก (Draft Agenda) จากฝ่ายวิชาการ (Scientific Program)]
+
+8. วิทยากรหลัก (Keynote Speakers)
+วัตถุประสงค์: แนะนำวิทยากรที่เป็นไฮไลท์ของงาน เพื่อดึงดูดผู้เข้าร่วม
+องค์ประกอบเนื้อหา (Components):
+รูปภาพ, ชื่อ-นามสกุล, ตำแหน่ง, และสังกัด
+ประวัติย่อ (Short Biography)
+หัวข้อ (Topic) หรือสาขาที่เชี่ยวชาญ
+ข้อมูลจาก FAPA 2026 (จาก PDF): (ยังไม่มีข้อมูลในขณะนี้)
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[รายชื่อวิทยากร Keynote ที่ยืนยันแล้ว (ประสานงานฝ่ายวิชาการ)]
+[รูปภาพและประวัติของวิทยากร]
+
+9. วิทยากรรับเชิญ (Plenary/Invited Speakers)
+วัตถุประสงค์: แนะนำวิทยากรรับเชิญในเซสชั่นต่างๆ
+องค์ประกอบเนื้อหา (Components): (คล้ายกับ Keynote แต่แยกส่วนกัน)
+รายชื่อ (อาจจะแสดงแบบ List หรือ Gallery)
+(ทางเลือก) ลิงก์ไปยังประวัติย่อ
+ข้อมูลจาก FAPA 2026 (จาก PDF): (ยังไม่มีข้อมูลในขณะนี้)
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[รายชื่อวิทยากร Invited Speakers ที่ยืนยันแล้ว]
+[ข้อมูลประวัติและรูปภาพ (ทยอยอัปเดต)]
+
+10. (หน้าย่อย) รายละเอียดโปรแกรม (Detailed Program)
+วัตถุประสงค์: ให้ข้อมูลเชิงลึกของแต่ละเซสชั่น (เมื่อข้อมูลพร้อม)
+องค์ประกอบเนื้อหา (Components):
+โปรแกรมแบบละเอียด (Scientific Timetable)
+สามารถค้นหา (Search) หรือกรอง (Filter) ตามวัน, หัวข้อ, หรือประเภทเซสชั่น
+(ทางเลือก) ลิงก์ไปยังหน้าดาวน์โหลด Program Book (PDF)
+ข้อมูลจาก FAPA 2026 (จาก PDF): (ยังไม่มีข้อมูลในขณะนี้)
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[ไฟล์ Program Book ฉบับสมบูรณ์ (ใกล้ช่วงวันงาน)]
+
+ส่วนที่ 3: บทคัดย่อ (Abstracts)
+
+11. เชิญชวนส่งบทคัดย่อ (Call for Abstracts)
+วัตถุประสงค์: ประชาสัมพันธ์และให้ข้อมูลทั้งหมดที่จำเป็นสำหรับการส่งผลงานวิชาการ
+องค์ประกอบเนื้อหา (Components):
+กำหนดการสำคัญ (Key Dates)
+หัวข้อที่เปิดรับ (Abstract Topics) (ควรสอดคล้องกับหน้า Theme & Topics)
+คำแนะนำสำหรับผู้เขียน (Guidelines for Authors) (รูปแบบ, จำนวนคำ)
+ประเภทการนำเสนอ (Presentation Types: Oral, Poster)
+ปุ่มลิงก์ไปยังหน้าระบบส่งบทคัดย่อ
+ข้อมูลจาก FAPA 2026 (จาก PDF): (ยังไม่มีข้อมูลในขณะนี้)
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[วันที่เปิด-ปิดรับบทคัดย่อ, วันประกาศผล]
+[Template และ Guidelines (PDF/Word)]
+[เกณฑ์การพิจารณา (Review Criteria)]
+
+12. ระบบส่งบทคัดย่อ (Abstract Submission)
+วัตถุประสงค์: เป็นช่องทางหลักในการรับผลงานเข้าระบบ (มักเป็นระบบภายนอกที่เชื่อมต่อ)
+องค์ประกอบเนื้อหา (Components):
+คำอธิบายขั้นตอนการใช้งานระบบ
+ลิงก์ไปยังระบบ (Submission Portal)
+ข้อมูลติดต่อสำหรับปัญหาเทคนิค (Technical Support)
+ข้อมูลจาก FAPA 2026 (จาก PDF): (ต้องจัดหาระบบ)
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[Link ไปยังระบบ Submission Online ที่จัดหา]
+[คู่มือการใช้งานระบบ (ถ้ามี)]
+
+ส่วนที่ 4: การลงทะเบียน (Registration)
+
+13. ข้อมูลการลงทะเบียน (Registration Information)
+วัตถุประสงค์: ให้ข้อมูลค่าลงทะเบียนและเงื่อนไขต่างๆ เพื่อให้ผู้สนใจตัดสินใจและดำเนินการ
+องค์ประกอบเนื้อหา (Components):
+ตารางอัตราค่าลงทะเบียน (Fee Schedule) แบ่งตาม:
+ประเภทผู้เข้าร่วม (Local, International, Student)
+ช่วงเวลา (Early Bird, Regular, On-site)
+สิ่งที่รวมอยู่ในค่าลงทะเบียน (Entitlements)
+นโยบายการยกเลิกและการคืนเงิน (Cancellation Policy)
+ข้อมูลจาก FAPA 2026 (จาก PDF): (ยังไม่มีข้อมูลในขณะนี้)
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[อัตราค่าลงทะเบียนที่อนุมัติแล้ว จากฝ่ายการเงินฯ (Finance)]
+[กำหนดการช่วง Early Bird / Regular]
+[รายละเอียด Entitlements (เช่น เอกสาร, Gala Dinner, Coffee Break)]
+
+14. ระบบลงทะเบียนออนไลน์ (Online Registration)
+วัตถุประสงค์: ช่องทางสำหรับผู้เข้าร่วมในการลงทะเบียนและชำระเงิน
+องค์ประกอบเนื้อหา (Components):
+ลิงก์ไปยังระบบลงทะเบียนออนไลน์ (Registration Portal)
+อธิบายช่องทางการชำระเงิน (Credit Card, Bank Transfer)
+ข้อมูลติดต่อสำหรับฝ่ายลงทะเบียน (Registration Secretariat)
+ข้อมูลจาก FAPA 2026 (จาก PDF):
+Registration Subcommittee: Ms. Phatree Sinanantapat
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[Link ไปยังระบบ Registration Online ที่จัดหา]
+[รายละเอียดขั้นตอนการชำระเงินและออกใบเสร็จ]
+
+ส่วนที่ 5: สถานที่และการเดินทาง (Venue & Travel)
+
+15. สถานที่จัดงาน (Conference Venue)
+วัตถุประสงค์: ให้ข้อมูลสถานที่จัดงานและการเดินทางไปยังสถานที่
+องค์ประกอบเนื้อหา (Components):
+ชื่อและที่อยู่ของสถานที่
+แผนที่ (Google Maps)
+วิธีการเดินทาง (การเดินทางจากสนามบิน, การเดินทางภายในพัทยา)
+(ทางเลือก) แผนผังชั้นภายใน (Floor Plan)
+ข้อมูลจาก FAPA 2026 (จาก PDF):
+Venue: PEACH (Pattaya Exhibition and Convention Hall)
+Logistics Subcommittee: Mr. Kamolsak Rueangcharoenrung
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[รูปภาพของ PEACH]
+[เนื้อหาแนะนำการเดินทาง (เช่น จาก BKK/DMK ไปพัทยา และไป PEACH)]
+
+16. ที่พัก (Accommodation)
+วัตถุประสงค์: แนะนำโรงแรมที่พักที่เป็น Official Hotel หรือโรงแรงใกล้เคียง
+องค์ประกอบเนื้อหา (Components):
+รายชื่อโรงแรม (Official Hotels) พร้อมอัตราราคาพิเศษ (ถ้ามี)
+ลิงก์ หรือ โค้ด สำหรับจอง
+แผนที่แสดงตำแหน่งโรงแรมเทียบกับสถานที่จัดงาน
+ข้อมูลจาก FAPA 2026 (จาก PDF): (ยังไม่มีข้อมูลในขณะนี้)
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[รายชื่อโรงแรมที่เจรจาแล้ว (ประสานงานฝ่าย Logistics)]
+[รายละเอียดการจองและราคาพิเศษ]
+
+17. เกี่ยวกับประเทศไทย/พัทยา (About Thailand/Pattaya)
+วัตถuประสงค์: ให้ข้อมูลทั่วไปสำหรับผู้เข้าร่วมต่างชาติ
+องค์ประกอบเนื้อหา (Components):
+ข้อมูลทั่วไป (สภาพอากาศ, สกุลเงิน, เวลา)
+ข้อมูลวีซ่า (Visa Information) (สำคัญมาก)
+สถานที่ท่องเที่ยวแนะนำในพัทยาและพื้นที่ใกล้เคียง
+วัฒนธรรมและข้อควรปฏิบัติ (Culture & Etiquette)
+ข้อมูลจาก FAPA 2026 (จาก PDF): (ใช้ข้อมูลทั่วไป)
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[เนื้อหาแนะนำการท่องเที่ยวและข้อมูลทั่วไป (อาจประสานงาน ททท.)]
+[ลิงก์ตรวจสอบข้อมูลวีซ่า (กระทรวงการต่างประเทศ)]
+
+ส่วนที่ 6: ผู้สนับสนุนและกิจกรรมอื่นๆ (Sponsors & Activities)
+
+18. ผู้สนับสนุนและผู้จัดแสดง (Sponsorship & Exhibition)
+วัตถุประสงค์: เชิญชวนบริษัทต่างๆ เข้าร่วมเป็นผู้สนับสนุน หรือออกบูธ
+องค์ประกอบเนื้อหา (Components):
+เอกสารนำเสนอ (Sponsorship Prospectus) (ให้ดาวน์โหลด)
+แพ็คเกจการสนับสนุน (Sponsorship Packages)
+แผนผังพื้นที่จัดแสดง (Exhibition Floor Plan)
+รายชื่อผู้สนับสนุนที่ยืนยันแล้ว (List of Sponsors/Exhibitors) (ทยอยอัปเดต)
+แบบฟอร์มติดต่อ หรือ ข้อมูลติดต่อฝ่ายขาย
+ข้อมูลจาก FAPA 2026 (จาก PDF):
+Sponsorship Subcommittee: Mr. Padoongyost Pisuthadamongkol
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[ไฟล์ Sponsorship Prospectus (PDF)]
+[แผนผังบูธ (Floor Plan) และอัตราค่าเช่าพื้นที่]
+
+19. กิจกรรมสังสรรค์ (Social Events)
+วัตถุประสงค์: ประชาสัมพันธ์กิจกรรม Networking และกิจกรรมภาคค่ำ
+องค์ประกอบเนื้อหา (Components):
+รายละเอียดงานเลี้ยงต้อนรับ (Welcome Reception)
+รายละเอียดงานกาลาดินเนอร์ (Gala Dinner) (ธีมงาน, การแต่งกาย)
+รายละเอียดงาน Cultural Night (ถ้ามี)
+ระบุว่ารวมในค่าลงทะเบียนหรือไม่ หรือต้องซื้อบัตรเพิ่ม
+ข้อมูลจาก FAPA 2026 (จาก PDF):
+Social Events: Welcome Reception, Gala Dinner, Cultural Night
+Social Events Subcommittee: Ms. Waranyu Lengviriyakul
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[วันที่, เวลา, สถานที่ (อาจจัดใน PEACH หรือโรงแรม) ของแต่ละงาน]
+[แนวคิด (Theme) ของงาน Gala Dinner (ถ้ามี)]
+
+20. ทัวร์ (Educational & Optional Tours)
+วัตถุประสงค์: นำเสนอโปรแกรมทัวร์เสริม (ทั้งทัวร์วิชาการและทัวร์ท่องเที่ยว)
+องค์ประกอบเนื้อหา (Components):
+รายละเอียดโปรแกรมทัวร์ (สถานที่, กำหนดการ, ราคา)
+(อาจรวม) Educational Tours (เยี่ยมชมโรงพยาบาล, โรงงานยา, คณะเภสัชฯ)
+(อาจรวม) Optional Tours (สำหรับผู้ติดตาม หรือหลังประชุม)
+วิธีการจอง (Booking)
+ข้อมูลจาก FAPA 2026 (จาก PDF):
+Educational Tours Subcommittee: Ms. Napapat Suthammanapong
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[โปรแกรมทัวร์ที่ยืนยันแล้ว (ประสานงานบริษัททัวร์)]
+[ราคาและช่องทางการจอง]
+
+21. ผู้ช่วยนักศึกษา (Student Assistants)
+วัตถุประสงค์: (อาจมี หรืออาจเป็นหน้าภายใน) ประชาสัมพันธ์รับสมัคร หรือให้ข้อมูลสำหรับผู้ช่วยนักศึกษา
+องค์ประกอบเนื้อหา (Components):
+คุณสมบัติ
+หน้าที่
+ช่องทางการสมัคร
+ข้อมูลจาก FAPA 2026 (จาก PDF):
+Student Assistant Subcommittee: Asst. Prof. Dr. Chaowalit Monton
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[ประกาศรับสมัคร (หากต้องการประกาศผ่านเว็บ)]
+
+ส่วนที่ 7: ข้อมูลสนับสนุน (Support)
+
+22. ข่าวสาร (News & Updates)
+วัตถุประสงค์: เป็นศูนย์รวมการประกาศและข่าวประชาสัมพันธ์ทั้งหมด
+องค์ประกอบเนื้อหา (Components):
+รายการข่าว (เรียงตามวันที่)
+(ทางเลือก) จดหมายข่าว (Newsletter) (ถ้ามี)
+ข้อมูลจาก FAPA 2026 (จาก PDF):
+PR and Media Subcommittee: Mr. Virun Vejasiri (รับผิดชอบหลัก)
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[ข่าวประชาสัมพันธ์ (Press Release) ที่จะทยอยปล่อย (เช่น ประกาศ Keynote, เตือน Early Bird)]
+
+23. คำถามที่พบบ่อย (FAQ)
+วัตถุประสงค์: รวบรวมคำตอบสำหรับคำถามที่ถูกถามบ่อย เพื่อลดภาระการตอบอีเมล
+องค์ประกอบเนื้อหา (Components):
+แบ่งตามหมวดหมู่ (ลงทะเบียน, บทคัดย่อ, การเดินทาง)
+คำถามและคำตอบที่กระชับ
+ข้อมูลจาก FAPA 2026 (จาก PDF): (ต้องรวบรวมจากคำถามจริง)
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[รวบรวมคำถามที่คาดว่าจะถูกถามบ่อยในแต่ละฝ่าย]
+
+24. ติดต่อเรา (Contact Us)
+วัตถุประสงค์: ช่องทางการติดต่อสำหรับผู้สนใจในเรื่องต่างๆ
+องค์ประกอบเนื้อหา (Components):
+ข้อมูลติดต่อเลขาธิการการประชุม (Conference Secretariat)
+ข้อมูลแยกตามฝ่าย (Registration, Abstract, Sponsorship)
+แบบฟอร์มติดต่อ (Contact Form) (ถ้ามี)
+ข้อมูลจาก FAPA 2026 (จาก PDF):
+Conference Secretariat: Assoc. Prof. Dr. Kampanart Huanbutta
+ข้อมูลที่ต้องเตรียม (Content to Prepare - 2026):
+[Email Address สำหรับแต่ละฝ่าย (เช่น secretariat@fapa2026.com, registration@fapa2026.com)]
+[ที่อยู่และเบอร์โทร (ถ้ามี)]
+
+
+
+
+
