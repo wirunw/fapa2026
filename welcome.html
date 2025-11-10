@@ -19,6 +19,18 @@
         .dropdown-menu {
             display: none;
         }
+        /* Add padding to prevent gap when moving mouse to dropdown */
+        .dropdown {
+            position: relative;
+        }
+        .dropdown::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            right: 0;
+            height: 8px;
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -35,7 +47,7 @@
                     <button class="text-blue-700 font-semibold flex items-center gap-1 cursor-pointer">
                         About <i data-lucide="chevron-down" class="w-4 h-4"></i>
                     </button>
-                    <div class="dropdown-menu absolute left-0 bg-white shadow-lg rounded-lg mt-2 py-2 w-48 z-50">
+                    <div class="dropdown-menu absolute left-0 bg-white shadow-lg rounded-lg mt-0 py-2 w-48 z-50">
                         <a href="about.html" class="block px-4 py-2 hover:bg-gray-100 text-gray-700">About FAPA & PAT</a>
                         <a href="welcome.html" class="block px-4 py-2 hover:bg-gray-100 bg-blue-50 text-gray-700">Welcome Messages</a>
                         <a href="committee.html" class="block px-4 py-2 hover:bg-gray-100 text-gray-700">Committee</a>

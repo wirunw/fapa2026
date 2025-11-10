@@ -13,11 +13,20 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        .dropdown:hover .dropdown-menu { 
-            display: block !important; 
-        }
-        .dropdown-menu {
+        .dropdown:hover .dropdown-menu {
             display: none;
+        }
+        /* Add padding to prevent gap when moving mouse to dropdown */
+        .dropdown {
+            position: relative;
+        }
+        .dropdown::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            right: 0;
+            height: 8px;
         }
     </style>
 </head>
@@ -45,7 +54,7 @@
                         <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">`n                            About
                             <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
                         </button>
-                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-2">
+                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-0">
                             <a href="welcome.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Welcome Messages</a>
                             <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">About FAPA & PAT</a>
                             <a href="committee.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Organizing Committee</a>
@@ -57,7 +66,7 @@
                         <button class="text-blue-600 hover:text-blue-700 font-medium flex items-center cursor-pointer">`n                            Info
                             <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
                         </button>
-                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-2">
+                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-0">
                             <a href="venue.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Venue & Travel</a>
                             <a href="sponsors.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Sponsors & Events</a>
                         </div>
