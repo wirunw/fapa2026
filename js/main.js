@@ -13,6 +13,33 @@ if (menuButton && mobileMenu) {
     });
 }
 
+// Dropdown Menu Handling
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const button = dropdown.querySelector('button');
+        const menu = dropdown.querySelector('.dropdown-menu');
+        
+        if (button && menu) {
+            let timeoutId;
+            
+            // Show dropdown on mouse enter
+            dropdown.addEventListener('mouseenter', () => {
+                clearTimeout(timeoutId);
+                menu.style.display = 'block';
+            });
+            
+            // Hide dropdown on mouse leave with delay
+            dropdown.addEventListener('mouseleave', () => {
+                timeoutId = setTimeout(() => {
+                    menu.style.display = 'none';
+                }, 100);
+            });
+        }
+    });
+});
+
 // Countdown Timer Logic
 function initCountdown() {
     const countdownElement = document.getElementById('countdown');
