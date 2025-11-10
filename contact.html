@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | FAPA 2026 Congress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .dropdown-menu {
+            display: none;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block !important;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            right: 0;
+            height: 8px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">FAPA</span>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">FAPA 2026</div>
+                            <div class="text-xs text-gray-600">November 3-7, 2026</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">
+                            About
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="welcome.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Welcome Messages</a>
+                            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">About FAPA & PAT</a>
+                            <a href="committee.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Organizing Committee</a>
+                        </div>
+                    </div>
+                    <a href="program.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Program</a>
+                    <a href="abstracts.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Call for Abstracts</a>
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">
+                            Info
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="venue.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Venue & Travel</a>
+                            <a href="sponsors.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Sponsors & Events</a>
+                        </div>
+                    </div>
+                    <a href="register.html" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition font-medium">Register</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="welcome.html" class="block py-2 text-gray-700 hover:text-blue-600">Welcome Messages</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">About FAPA & PAT</a>
+                <a href="committee.html" class="block py-2 text-gray-700 hover:text-blue-600">Organizing Committee</a>
+                <a href="program.html" class="block py-2 text-gray-700 hover:text-blue-600">Program</a>
+                <a href="abstracts.html" class="block py-2 text-gray-700 hover:text-blue-600">Call for Abstracts</a>
+                <a href="venue.html" class="block py-2 text-gray-700 hover:text-blue-600">Venue & Travel</a>
+                <a href="sponsors.html" class="block py-2 text-gray-700 hover:text-blue-600">Sponsors & Events</a>
+                <a href="register.html" class="block py-2 bg-blue-600 text-white text-center rounded-full hover:bg-blue-700">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+                <p class="text-xl text-blue-100">We're here to help answer your questions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Conference Secretariat -->
+            <div class="mb-16">
+                <div class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl shadow-2xl p-8 md:p-12 text-white text-center">
+                    <div class="flex items-center justify-center mb-6">
+                        <i data-lucide="mail" class="w-16 h-16"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4">Conference Secretariat</h2>
+                    <p class="text-xl mb-6">For general inquiries and information</p>
+                    <div class="space-y-2">
+                        <p class="text-lg"><strong>Assoc. Prof. Dr. Kampanart Huanbutta</strong></p>
+                        <p>Conference Secretariat & Vice Chairperson</p>
+                        <p class="mt-4">
+                            <a href="mailto:secretariat@fapa2026.com" class="inline-flex items-center bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transition">
+                                <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                                secretariat@fapa2026.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact by Department -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">Contact by Department</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Registration -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="user-check" class="w-6 h-6 text-blue-600"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900">Registration</h4>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">For registration, fees, and payment inquiries</p>
+                        <p class="text-sm font-semibold text-gray-900 mb-2">Ms. Phatree Sinanantapat</p>
+                        <a href="mailto:registration@fapa2026.com" class="text-blue-600 hover:text-blue-700 text-sm flex items-center">
+                            <i data-lucide="mail" class="w-4 h-4 mr-1"></i>
+                            registration@fapa2026.com
+                        </a>
+                    </div>
+
+                    <!-- Scientific Program -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="presentation" class="w-6 h-6 text-purple-600"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900">Scientific Program</h4>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">For program, sessions, and speakers</p>
+                        <p class="text-sm font-semibold text-gray-900 mb-2">Dr. Duangratana Shuwisitkul</p>
+                        <a href="mailto:scientific@fapa2026.com" class="text-blue-600 hover:text-blue-700 text-sm flex items-center">
+                            <i data-lucide="mail" class="w-4 h-4 mr-1"></i>
+                            scientific@fapa2026.com
+                        </a>
+                    </div>
+
+                    <!-- Abstract Submission -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="file-text" class="w-6 h-6 text-green-600"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900">Abstracts</h4>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">For abstract submission and review</p>
+                        <p class="text-sm font-semibold text-gray-900 mb-2">Dr. Duangratana Shuwisitkul</p>
+                        <a href="mailto:abstracts@fapa2026.com" class="text-blue-600 hover:text-blue-700 text-sm flex items-center">
+                            <i data-lucide="mail" class="w-4 h-4 mr-1"></i>
+                            abstracts@fapa2026.com
+                        </a>
+                    </div>
+
+                    <!-- Sponsorship -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="handshake" class="w-6 h-6 text-yellow-600"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900">Sponsorship</h4>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">For sponsorship and exhibition</p>
+                        <p class="text-sm font-semibold text-gray-900 mb-2">Mr. Padoongyost Pisuthadamongkol</p>
+                        <a href="mailto:sponsorship@fapa2026.com" class="text-blue-600 hover:text-blue-700 text-sm flex items-center">
+                            <i data-lucide="mail" class="w-4 h-4 mr-1"></i>
+                            sponsorship@fapa2026.com
+                        </a>
+                    </div>
+
+                    <!-- Accommodation -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="hotel" class="w-6 h-6 text-pink-600"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900">Venue & Logistics</h4>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">For venue, accommodation, and travel</p>
+                        <p class="text-sm font-semibold text-gray-900 mb-2">Mr. Kamolsak Rueangcharoenrung</p>
+                        <a href="mailto:logistics@fapa2026.com" class="text-blue-600 hover:text-blue-700 text-sm flex items-center">
+                            <i data-lucide="mail" class="w-4 h-4 mr-1"></i>
+                            logistics@fapa2026.com
+                        </a>
+                    </div>
+
+                    <!-- Media & PR -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="megaphone" class="w-6 h-6 text-red-600"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900">Media & PR</h4>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">For media, publicity, and website</p>
+                        <p class="text-sm font-semibold text-gray-900 mb-2">Mr. Wirun Wetsiri</p>
+                        <a href="mailto:media@fapa2026.com" class="text-blue-600 hover:text-blue-700 text-sm flex items-center">
+                            <i data-lucide="mail" class="w-4 h-4 mr-1"></i>
+                            media@fapa2026.com
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PAT Office -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">The Pharmacy Association of Thailand</h3>
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-4">Address</h4>
+                            <div class="space-y-2 text-gray-700">
+                                <p class="flex items-start">
+                                    <i data-lucide="map-pin" class="w-5 h-5 mr-2 text-blue-600 flex-shrink-0 mt-1"></i>
+                                    <span>The Pharmacy Association of Thailand<br>
+                                    Under Royal Patronage of His Majesty the King<br>
+                                    Bangkok, Thailand</span>
+                                </p>
+                                <p class="flex items-center">
+                                    <i data-lucide="mail" class="w-5 h-5 mr-2 text-blue-600"></i>
+                                    <a href="mailto:info@pat.or.th" class="text-blue-600 hover:text-blue-700">info@pat.or.th</a>
+                                </p>
+                                <p class="flex items-center">
+                                    <i data-lucide="globe" class="w-5 h-5 mr-2 text-blue-600"></i>
+                                    <a href="http://www.pat.or.th" target="_blank" class="text-blue-600 hover:text-blue-700">www.pat.or.th</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-4">Office Hours</h4>
+                            <div class="space-y-2 text-gray-700">
+                                <p class="flex items-center">
+                                    <i data-lucide="clock" class="w-5 h-5 mr-2 text-blue-600"></i>
+                                    Monday - Friday: 9:00 AM - 5:00 PM (GMT+7)
+                                </p>
+                                <p class="flex items-center">
+                                    <i data-lucide="clock" class="w-5 h-5 mr-2 text-blue-600"></i>
+                                    Saturday - Sunday: Closed
+                                </p>
+                            </div>
+                            <div class="mt-6">
+                                <h5 class="font-semibold text-gray-900 mb-2">Response Time</h5>
+                                <p class="text-sm text-gray-600">We aim to respond to all inquiries within 48 hours during business days.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media & Stay Connected -->
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-xl p-8 md:p-12 text-white text-center">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">Stay Connected</h3>
+                <p class="text-lg mb-6 text-blue-100">Follow us for the latest updates and announcements</p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a href="#" class="inline-flex items-center bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transition">
+                        <i data-lucide="facebook" class="w-5 h-5 mr-2"></i>
+                        Facebook
+                    </a>
+                    <a href="#" class="inline-flex items-center bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transition">
+                        <i data-lucide="twitter" class="w-5 h-5 mr-2"></i>
+                        Twitter
+                    </a>
+                    <a href="#" class="inline-flex items-center bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transition">
+                        <i data-lucide="linkedin" class="w-5 h-5 mr-2"></i>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">FAPA 2026</h3>
+                    <p class="text-sm">The 27th FAPA Congress in Bangkok, Thailand</p>
+                    <p class="text-sm mt-2">November 3-7, 2026</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="program.html" class="hover:text-white">Program</a></li>
+                        <li><a href="abstracts.html" class="hover:text-white">Abstracts</a></li>
+                        <li><a href="register.html" class="hover:text-white">Register</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Information</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="venue.html" class="hover:text-white">Venue</a></li>
+                        <li><a href="sponsors.html" class="hover:text-white">Sponsors</a></li>
+                        <li><a href="committee.html" class="hover:text-white">Committee</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <p class="text-sm">The Pharmacy Association of Thailand</p>
+                    <p class="text-sm mt-2">Email: info@pat.or.th</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2026 FAPA Congress. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

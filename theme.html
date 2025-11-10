@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme & Topics | FAPA 2026 Congress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .dropdown-menu {
+            display: none;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block !important;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            right: 0;
+            height: 8px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">FAPA</span>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">FAPA 2026</div>
+                            <div class="text-xs text-gray-600">November 3-7, 2026</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">
+                            About
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="welcome.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Welcome Messages</a>
+                            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">About FAPA & PAT</a>
+                            <a href="committee.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Organizing Committee</a>
+                        </div>
+                    </div>
+                    <a href="program.html" class="text-blue-600 hover:text-blue-700 font-medium transition">Program</a>
+                    <a href="abstracts.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Call for Abstracts</a>
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">
+                            Info
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="venue.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Venue & Travel</a>
+                            <a href="sponsors.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Sponsors & Events</a>
+                        </div>
+                    </div>
+                    <a href="register.html" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition font-medium">Register</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="welcome.html" class="block py-2 text-gray-700 hover:text-blue-600">Welcome Messages</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">About FAPA & PAT</a>
+                <a href="committee.html" class="block py-2 text-gray-700 hover:text-blue-600">Organizing Committee</a>
+                <a href="program.html" class="block py-2 text-blue-600 font-medium">Program</a>
+                <a href="abstracts.html" class="block py-2 text-gray-700 hover:text-blue-600">Call for Abstracts</a>
+                <a href="venue.html" class="block py-2 text-gray-700 hover:text-blue-600">Venue & Travel</a>
+                <a href="sponsors.html" class="block py-2 text-gray-700 hover:text-blue-600">Sponsors & Events</a>
+                <a href="register.html" class="block py-2 bg-blue-600 text-white text-center rounded-full hover:bg-blue-700">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Theme & Topics</h1>
+                <p class="text-xl text-blue-100">Exploring the future of pharmaceutical sciences</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Main Theme -->
+            <div class="mb-16">
+                <div class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl shadow-2xl p-8 md:p-12 text-white text-center">
+                    <div class="flex items-center justify-center mb-6">
+                        <i data-lucide="lightbulb" class="w-16 h-16"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Congress Theme</h2>
+                    <p class="text-2xl md:text-3xl font-semibold leading-relaxed">
+                        "Advancing Pharmacy through Innovation, Collaboration, and Sustainability"
+                    </p>
+                </div>
+            </div>
+
+            <!-- Theme Explanation -->
+            <div class="mb-16">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">About the Theme</h3>
+                    <div class="prose max-w-none text-gray-700 space-y-4">
+                        <p class="text-lg leading-relaxed">
+                            The 27th FAPA Congress embraces a forward-thinking vision that addresses the evolving challenges 
+                            and opportunities in pharmaceutical sciences. Our theme emphasizes three pillars:
+                        </p>
+                        <div class="grid md:grid-cols-3 gap-6 mt-8">
+                            <div class="bg-blue-50 p-6 rounded-lg">
+                                <div class="flex items-center mb-4">
+                                    <i data-lucide="sparkles" class="w-8 h-8 text-blue-600 mr-3"></i>
+                                    <h4 class="text-xl font-bold text-gray-900">Innovation</h4>
+                                </div>
+                                <p class="text-gray-700">
+                                    Embracing cutting-edge technologies, novel drug delivery systems, and breakthrough 
+                                    research in pharmaceutical sciences.
+                                </p>
+                            </div>
+                            <div class="bg-green-50 p-6 rounded-lg">
+                                <div class="flex items-center mb-4">
+                                    <i data-lucide="users" class="w-8 h-8 text-green-600 mr-3"></i>
+                                    <h4 class="text-xl font-bold text-gray-900">Collaboration</h4>
+                                </div>
+                                <p class="text-gray-700">
+                                    Fostering partnerships across academia, industry, and healthcare to advance 
+                                    pharmaceutical practice and patient care.
+                                </p>
+                            </div>
+                            <div class="bg-purple-50 p-6 rounded-lg">
+                                <div class="flex items-center mb-4">
+                                    <i data-lucide="leaf" class="w-8 h-8 text-purple-600 mr-3"></i>
+                                    <h4 class="text-xl font-bold text-gray-900">Sustainability</h4>
+                                </div>
+                                <p class="text-gray-700">
+                                    Promoting environmentally responsible practices, sustainable healthcare systems, 
+                                    and long-term solutions for global health challenges.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scientific Topics -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">Scientific Topics</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    
+                    <!-- Topic 1 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i data-lucide="pill" class="w-6 h-6 text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-2">Pharmaceutical Sciences & Drug Discovery</h4>
+                                <p class="text-gray-600 text-sm">Novel drug development, medicinal chemistry, pharmacology, and preclinical studies</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 2 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i data-lucide="test-tube" class="w-6 h-6 text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-2">Pharmaceutics & Drug Delivery</h4>
+                                <p class="text-gray-600 text-sm">Formulation development, nanotechnology, targeted delivery, and controlled release systems</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 3 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i data-lucide="activity" class="w-6 h-6 text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-2">Clinical Pharmacy & Patient Care</h4>
+                                <p class="text-gray-600 text-sm">Pharmaceutical care, medication therapy management, and patient safety</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 4 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i data-lucide="beaker" class="w-6 h-6 text-red-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-2">Pharmaceutical Analysis & Quality Assurance</h4>
+                                <p class="text-gray-600 text-sm">Analytical methods, quality control, validation, and regulatory compliance</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 5 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i data-lucide="dna" class="w-6 h-6 text-yellow-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-2">Biotechnology & Biopharmaceuticals</h4>
+                                <p class="text-gray-600 text-sm">Biologics, biosimilars, gene therapy, and personalized medicine</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 6 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i data-lucide="leaf" class="w-6 h-6 text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-2">Natural Products & Traditional Medicine</h4>
+                                <p class="text-gray-600 text-sm">Herbal medicines, phytochemistry, and integration with modern pharmacy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 7 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i data-lucide="cpu" class="w-6 h-6 text-pink-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-2">Digital Health & AI in Pharmacy</h4>
+                                <p class="text-gray-600 text-sm">Artificial intelligence, machine learning, telepharmacy, and digital therapeutics</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 8 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i data-lucide="globe" class="w-6 h-6 text-teal-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-2">Public Health & Pharmacy Practice</h4>
+                                <p class="text-gray-600 text-sm">Community pharmacy, health promotion, epidemiology, and access to medicines</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 9 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i data-lucide="book-open" class="w-6 h-6 text-orange-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-2">Pharmacy Education & Professional Development</h4>
+                                <p class="text-gray-600 text-sm">Curriculum innovation, competency-based education, and lifelong learning</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic 10 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i data-lucide="recycle" class="w-6 h-6 text-cyan-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-2">Green Pharmacy & Environmental Sustainability</h4>
+                                <p class="text-gray-600 text-sm">Eco-friendly practices, waste management, and sustainable pharmaceutical production</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-xl p-8 md:p-12 text-white text-center">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">Interested in Contributing?</h3>
+                <p class="text-lg mb-6 text-blue-100">Submit your research abstract and be part of this exciting scientific exchange</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="abstracts.html" class="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition">
+                        <i data-lucide="file-text" class="w-5 h-5 mr-2"></i>
+                        Submit Abstract
+                    </a>
+                    <a href="program.html" class="inline-flex items-center justify-center bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition">
+                        <i data-lucide="calendar" class="w-5 h-5 mr-2"></i>
+                        View Full Program
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">FAPA 2026</h3>
+                    <p class="text-sm">The 27th FAPA Congress in Bangkok, Thailand</p>
+                    <p class="text-sm mt-2">November 3-7, 2026</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="program.html" class="hover:text-white">Program</a></li>
+                        <li><a href="abstracts.html" class="hover:text-white">Abstracts</a></li>
+                        <li><a href="register.html" class="hover:text-white">Register</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Information</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="venue.html" class="hover:text-white">Venue</a></li>
+                        <li><a href="sponsors.html" class="hover:text-white">Sponsors</a></li>
+                        <li><a href="committee.html" class="hover:text-white">Committee</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <p class="text-sm">The Pharmacy Association of Thailand</p>
+                    <p class="text-sm mt-2">Email: info@pat.or.th</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2026 FAPA Congress. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
