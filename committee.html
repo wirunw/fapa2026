@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizing Committee | FAPA 2026 Congress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">FAPA</span>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">FAPA 2026</div>
+                            <div class="text-xs text-gray-600">November 3-7, 2026</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+                    <div class="relative group">
+                        <button class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+                            About
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block w-48 bg-white shadow-xl rounded-lg py-2 mt-2">
+                            <a href="welcome.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Welcome Messages</a>
+                            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">About FAPA & PAT</a>
+                            <a href="committee.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Organizing Committee</a>
+                        </div>
+                    </div>
+                    <a href="program.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Program</a>
+                    <a href="abstracts.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Call for Abstracts</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center">
+                            Info
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block w-48 bg-white shadow-xl rounded-lg py-2 mt-2">
+                            <a href="venue.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Venue & Travel</a>
+                            <a href="sponsors.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Sponsors & Events</a>
+                        </div>
+                    </div>
+                    <a href="register.html" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition font-medium">Register</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="welcome.html" class="block py-2 text-gray-700 hover:text-blue-600">Welcome Messages</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">About FAPA & PAT</a>
+                <a href="committee.html" class="block py-2 text-blue-600 font-medium">Organizing Committee</a>
+                <a href="program.html" class="block py-2 text-gray-700 hover:text-blue-600">Program</a>
+                <a href="abstracts.html" class="block py-2 text-gray-700 hover:text-blue-600">Call for Abstracts</a>
+                <a href="venue.html" class="block py-2 text-gray-700 hover:text-blue-600">Venue & Travel</a>
+                <a href="sponsors.html" class="block py-2 text-gray-700 hover:text-blue-600">Sponsors & Events</a>
+                <a href="register.html" class="block py-2 bg-blue-600 text-white text-center rounded-full hover:bg-blue-700">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Organizing Committee</h1>
+                <p class="text-xl text-blue-100">Meet the team behind FAPA 2026 Congress</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- LOC Leadership -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Local Organizing Committee Leadership</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- LOC Chair -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                        <div class="mb-6">
+                            <img src="https://i.postimg.cc/7Yyp9vDc/dr-pornsak.png" alt="Prof. Dr. Pornsak Sriamornsak" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-blue-200">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-1">Prof. Dr. Pornsak Sriamornsak</h3>
+                        <p class="text-blue-600 font-semibold mb-4">Chairperson, LOC</p>
+                        <p class="text-gray-600 text-sm">
+                            Leading the organization of FAPA 2026 Congress with extensive experience in pharmaceutical sciences and international collaboration.
+                        </p>
+                    </div>
+
+                    <!-- PAT President -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                        <div class="mb-6">
+                            <div class="w-32 h-32 rounded-full mx-auto bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center border-4 border-indigo-200">
+                                <span class="text-white text-3xl font-bold">DS</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Suvit Teerakulchon</h3>
+                        <p class="text-indigo-600 font-semibold mb-4">President, PAT</p>
+                        <p class="text-gray-600 text-sm">
+                            President of the Pharmacy Association of Thailand, providing strategic guidance and support for the congress.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subcommittees -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Subcommittees</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Each Subcommittee Card -->
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="presentation" class="w-6 h-6 text-blue-600"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900">Scientific Program</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Organizing keynote speakers, symposiums, and oral presentations</p>
+                        <p class="text-sm font-semibold text-blue-600">Chair: Asst. Prof. Dr. Chadarat Ampasavate</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="file-text" class="w-6 h-6 text-green-600"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900">Abstract Review</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Managing abstract submissions and peer review process</p>
+                        <p class="text-sm font-semibold text-green-600">Chair: Assoc. Prof. Dr. Nontima Vardhanabhuti</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="users" class="w-6 h-6 text-purple-600"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900">Registration</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Handling participant registration and payment processing</p>
+                        <p class="text-sm font-semibold text-purple-600">Chair: Asst. Prof. Dr. Napaphak Jaipakdee</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="briefcase" class="w-6 h-6 text-yellow-600"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900">Exhibition & Sponsorship</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Coordinating sponsors and exhibition arrangements</p>
+                        <p class="text-sm font-semibold text-yellow-600">Chair: Assoc. Prof. Dr. Kanokwan Jarukamjorn</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="megaphone" class="w-6 h-6 text-red-600"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900">Public Relations</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Managing communications and media outreach</p>
+                        <p class="text-sm font-semibold text-red-600">Chair: Mr. Wirun Wetsiri</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="plane" class="w-6 h-6 text-indigo-600"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900">Accommodation & Transport</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Arranging hotels and transportation services</p>
+                        <p class="text-sm font-semibold text-indigo-600">Chair: Assoc. Prof. Dr. Wisut Wichitnithad</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="calendar" class="w-6 h-6 text-pink-600"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900">Social Events</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Planning welcome reception, gala dinner, and cultural events</p>
+                        <p class="text-sm font-semibold text-pink-600">Chair: Assoc. Prof. Dr. Ubonthip Nimmannit</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="coffee" class="w-6 h-6 text-teal-600"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900">Catering</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Managing food and beverage services throughout the congress</p>
+                        <p class="text-sm font-semibold text-teal-600">Chair: Asst. Prof. Dr. Thaned Pongjanyakul</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="monitor" class="w-6 h-6 text-orange-600"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900">Audio-Visual & IT</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Providing technical support and AV equipment</p>
+                        <p class="text-sm font-semibold text-orange-600">Chair: Assoc. Prof. Dr. Narubodee Chaijareenont</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="layout" class="w-6 h-6 text-cyan-600"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900">Venue & Logistics</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Overseeing venue setup and logistics coordination</p>
+                        <p class="text-sm font-semibold text-cyan-600">Chair: Asst. Prof. Dr. Warintorn Ruksiriwanich</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-lime-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="award" class="w-6 h-6 text-lime-600"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900">Awards & Recognition</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Managing best poster/presentation awards and certificates</p>
+                        <p class="text-sm font-semibold text-lime-600">Chair: Assoc. Prof. Dr. Benchawan Chamsai</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-violet-100 rounded-lg flex items-center justify-center mr-3">
+                                <i data-lucide="heart-handshake" class="w-6 h-6 text-violet-600"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900">Volunteers</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Recruiting and coordinating student and staff volunteers</p>
+                        <p class="text-sm font-semibold text-violet-600">Chair: Asst. Prof. Dr. Patcharee Priprem</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="mt-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl shadow-xl p-8 md:p-12 text-white text-center">
+                <h2 class="text-3xl font-bold mb-4">Want to Get Involved?</h2>
+                <p class="text-xl text-blue-100 mb-8">
+                    We welcome volunteers and collaborators. Contact us to learn how you can contribute to making FAPA 2026 a success.
+                </p>
+                <a href="mailto:info@pat.or.th" class="inline-flex items-center bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition">
+                    <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                    Contact the Committee
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">FAPA 2026</h3>
+                    <p class="text-sm">The 27th FAPA Congress in Bangkok, Thailand</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="program.html" class="hover:text-white">Program</a></li>
+                        <li><a href="abstracts.html" class="hover:text-white">Abstracts</a></li>
+                        <li><a href="register.html" class="hover:text-white">Register</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Information</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="venue.html" class="hover:text-white">Venue</a></li>
+                        <li><a href="sponsors.html" class="hover:text-white">Sponsors</a></li>
+                        <li><a href="committee.html" class="hover:text-white">Committee</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <p class="text-sm">The Pharmacy Association of Thailand</p>
+                    <p class="text-sm mt-2">Email: info@pat.or.th</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2026 FAPA Congress. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

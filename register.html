@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | FAPA 2026 Congress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">FAPA</span>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">FAPA 2026</div>
+                            <div class="text-xs text-gray-600">November 3-7, 2026</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center">
+                            About
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block w-48 bg-white shadow-xl rounded-lg py-2 mt-2">
+                            <a href="welcome.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Welcome Messages</a>
+                            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">About FAPA & PAT</a>
+                            <a href="committee.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Organizing Committee</a>
+                        </div>
+                    </div>
+                    <a href="program.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Program</a>
+                    <a href="abstracts.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Call for Abstracts</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center">
+                            Info
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block w-48 bg-white shadow-xl rounded-lg py-2 mt-2">
+                            <a href="venue.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Venue & Travel</a>
+                            <a href="sponsors.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Sponsors & Events</a>
+                        </div>
+                    </div>
+                    <a href="register.html" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition font-medium">Register</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="welcome.html" class="block py-2 text-gray-700 hover:text-blue-600">Welcome Messages</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">About FAPA & PAT</a>
+                <a href="committee.html" class="block py-2 text-gray-700 hover:text-blue-600">Organizing Committee</a>
+                <a href="program.html" class="block py-2 text-gray-700 hover:text-blue-600">Program</a>
+                <a href="abstracts.html" class="block py-2 text-gray-700 hover:text-blue-600">Call for Abstracts</a>
+                <a href="venue.html" class="block py-2 text-gray-700 hover:text-blue-600">Venue & Travel</a>
+                <a href="sponsors.html" class="block py-2 text-gray-700 hover:text-blue-600">Sponsors & Events</a>
+                <a href="register.html" class="block py-2 bg-blue-600 text-white text-center rounded-full hover:bg-blue-700">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Registration</h1>
+                <p class="text-xl text-blue-100">Secure your place at FAPA 2026 Congress</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Registration CTA -->
+            <div class="mb-16">
+                <div class="bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl shadow-xl p-8 md:p-12 text-white text-center">
+                    <i data-lucide="calendar-check" class="w-16 h-16 mx-auto mb-6"></i>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Registration Opening Soon!</h2>
+                    <p class="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
+                        Online registration portal will be available soon. Register early to take advantage of discounted rates and secure your spot at the congress.
+                    </p>
+                    <a href="mailto:info@pat.or.th?subject=FAPA 2026 Registration Inquiry" class="inline-flex items-center bg-white text-green-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-green-50 transition shadow-lg">
+                        <i data-lucide="bell" class="w-6 h-6 mr-2"></i>
+                        Notify Me When Registration Opens
+                    </a>
+                </div>
+            </div>
+
+            <!-- Important Dates -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Important Dates</h2>
+                
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="calendar-plus" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">Early Bird Opens</h3>
+                        <p class="text-2xl font-bold text-blue-600 mb-1">TBA</p>
+                        <p class="text-sm text-gray-600">Lowest rates available</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="calendar-clock" class="w-8 h-8 text-yellow-600"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">Early Bird Ends</h3>
+                        <p class="text-2xl font-bold text-yellow-600 mb-1">TBA</p>
+                        <p class="text-sm text-gray-600">Don't miss the discount</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="calendar-x" class="w-8 h-8 text-orange-600"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">Standard Deadline</h3>
+                        <p class="text-2xl font-bold text-orange-600 mb-1">TBA</p>
+                        <p class="text-sm text-gray-600">Regular rates apply</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="calendar" class="w-8 h-8 text-purple-600"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">Congress Dates</h3>
+                        <p class="text-2xl font-bold text-purple-600 mb-1">Nov 3-7</p>
+                        <p class="text-sm text-gray-600">2026</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Registration Categories -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Registration Categories</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- International Delegate -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-6 text-white">
+                            <i data-lucide="globe" class="w-12 h-12 mb-3"></i>
+                            <h3 class="text-2xl font-bold">International Delegate</h3>
+                        </div>
+                        <div class="p-6">
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">Early Bird Rate</p>
+                                    <p class="text-3xl font-bold text-gray-900">TBA</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">Standard Rate</p>
+                                    <p class="text-2xl font-bold text-gray-700">TBA</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">On-site Rate</p>
+                                    <p class="text-2xl font-bold text-gray-700">TBA</p>
+                                </div>
+                            </div>
+                            <div class="mt-6 pt-6 border-t">
+                                <p class="text-sm text-gray-600">For participants from outside Thailand</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Local Delegate (Thailand) -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="bg-gradient-to-br from-green-500 to-emerald-600 p-6 text-white">
+                            <i data-lucide="map-pin" class="w-12 h-12 mb-3"></i>
+                            <h3 class="text-2xl font-bold">Local Delegate</h3>
+                        </div>
+                        <div class="p-6">
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">Early Bird Rate</p>
+                                    <p class="text-3xl font-bold text-gray-900">TBA</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">Standard Rate</p>
+                                    <p class="text-2xl font-bold text-gray-700">TBA</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">On-site Rate</p>
+                                    <p class="text-2xl font-bold text-gray-700">TBA</p>
+                                </div>
+                            </div>
+                            <div class="mt-6 pt-6 border-t">
+                                <p class="text-sm text-gray-600">For participants from Thailand</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Student -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="bg-gradient-to-br from-purple-500 to-pink-600 p-6 text-white">
+                            <i data-lucide="graduation-cap" class="w-12 h-12 mb-3"></i>
+                            <h3 class="text-2xl font-bold">Student</h3>
+                        </div>
+                        <div class="p-6">
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">Early Bird Rate</p>
+                                    <p class="text-3xl font-bold text-gray-900">TBA</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">Standard Rate</p>
+                                    <p class="text-2xl font-bold text-gray-700">TBA</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">On-site Rate</p>
+                                    <p class="text-2xl font-bold text-gray-700">TBA</p>
+                                </div>
+                            </div>
+                            <div class="mt-6 pt-6 border-t">
+                                <p class="text-sm text-gray-600">Valid student ID required</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Virtual Attendance -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="bg-gradient-to-br from-orange-500 to-red-600 p-6 text-white">
+                            <i data-lucide="monitor" class="w-12 h-12 mb-3"></i>
+                            <h3 class="text-2xl font-bold">Virtual Attendance</h3>
+                        </div>
+                        <div class="p-6">
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">Online Access</p>
+                                    <p class="text-3xl font-bold text-gray-900">TBA</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">On-demand</p>
+                                    <p class="text-2xl font-bold text-gray-700">TBA</p>
+                                </div>
+                            </div>
+                            <div class="mt-6 pt-6 border-t">
+                                <p class="text-sm text-gray-600">Access to selected sessions online</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accompanying Person -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="bg-gradient-to-br from-teal-500 to-cyan-600 p-6 text-white">
+                            <i data-lucide="user-plus" class="w-12 h-12 mb-3"></i>
+                            <h3 class="text-2xl font-bold">Accompanying Person</h3>
+                        </div>
+                        <div class="p-6">
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">All Days</p>
+                                    <p class="text-3xl font-bold text-gray-900">TBA</p>
+                                </div>
+                            </div>
+                            <div class="mt-6 pt-6 border-t">
+                                <p class="text-sm text-gray-600">Access to social events only (no scientific sessions)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day Pass -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="bg-gradient-to-br from-yellow-500 to-amber-600 p-6 text-white">
+                            <i data-lucide="ticket" class="w-12 h-12 mb-3"></i>
+                            <h3 class="text-2xl font-bold">Day Pass</h3>
+                        </div>
+                        <div class="p-6">
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">Single Day</p>
+                                    <p class="text-3xl font-bold text-gray-900">TBA</p>
+                                </div>
+                            </div>
+                            <div class="mt-6 pt-6 border-t">
+                                <p class="text-sm text-gray-600">Access to one day of congress</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-blue-50 border-l-4 border-blue-500 p-6">
+                    <h3 class="font-bold text-gray-900 mb-2">Registration Includes:</h3>
+                    <ul class="grid md:grid-cols-2 gap-2 text-sm text-gray-700">
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 text-green-600 mr-2"></i>Access to all scientific sessions</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 text-green-600 mr-2"></i>Congress materials and program book</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 text-green-600 mr-2"></i>Coffee breaks and refreshments</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 text-green-600 mr-2"></i>Exhibition area access</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 text-green-600 mr-2"></i>Welcome reception (Day 1)</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 text-green-600 mr-2"></i>Certificate of attendance</li>
+                    </ul>
+                    <p class="text-sm text-gray-600 mt-4">
+                        <strong>Note:</strong> Gala Dinner (Day 3) requires separate ticket purchase.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Payment Methods -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Payment Methods</h2>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="credit-card" class="w-8 h-8 text-blue-600"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 mb-2">Credit/Debit Card</h3>
+                            <p class="text-sm text-gray-600">Visa, Mastercard, American Express accepted</p>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="building-2" class="w-8 h-8 text-green-600"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 mb-2">Bank Transfer</h3>
+                            <p class="text-sm text-gray-600">Direct transfer to PAT bank account</p>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="wallet" class="w-8 h-8 text-purple-600"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 mb-2">PayPal</h3>
+                            <p class="text-sm text-gray-600">Secure online payment via PayPal</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-8 border-t">
+                        <h4 class="font-semibold text-gray-900 mb-4">Payment Terms & Conditions:</h4>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li>• Full payment required to confirm registration</li>
+                            <li>• Confirmation email sent within 48 hours of payment</li>
+                            <li>• Cancellation policy: Full refund if cancelled 60+ days before congress; 50% refund if cancelled 30-59 days before; No refund if cancelled less than 30 days before</li>
+                            <li>• Substitutions allowed at any time with written notice</li>
+                            <li>• All fees in USD unless otherwise stated</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Registration Process -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">How to Register</h2>
+                
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">1</div>
+                        <h3 class="font-bold text-gray-900 mb-2">Create Account</h3>
+                        <p class="text-sm text-gray-600">Register on our online platform with your email and basic information</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">2</div>
+                        <h3 class="font-bold text-gray-900 mb-2">Select Category</h3>
+                        <p class="text-sm text-gray-600">Choose your registration category and any additional options</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">3</div>
+                        <h3 class="font-bold text-gray-900 mb-2">Make Payment</h3>
+                        <p class="text-sm text-gray-600">Complete payment using your preferred method</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">4</div>
+                        <h3 class="font-bold text-gray-900 mb-2">Get Confirmation</h3>
+                        <p class="text-sm text-gray-600">Receive confirmation email with registration details</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group Registration -->
+            <div class="mb-16">
+                <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-8 md:p-12">
+                    <div class="max-w-3xl mx-auto text-center">
+                        <i data-lucide="users-round" class="w-16 h-16 text-indigo-600 mx-auto mb-6"></i>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Group Registration Discounts</h2>
+                        <p class="text-lg text-gray-700 mb-6">
+                            Registering 5 or more participants from the same organization? Contact us for special group rates and streamlined registration process.
+                        </p>
+                        <a href="mailto:info@pat.or.th?subject=FAPA 2026 Group Registration" class="inline-flex items-center bg-indigo-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-indigo-700 transition">
+                            <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                            Inquire About Group Rates
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQs -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Registration FAQs</h2>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 max-w-4xl mx-auto">
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2 flex items-center">
+                                <i data-lucide="help-circle" class="w-5 h-5 text-blue-600 mr-2"></i>
+                                Can I change my registration category after payment?
+                            </h3>
+                            <p class="text-gray-700 text-sm ml-7">Yes, please contact us and we'll help you modify your registration. Additional fees may apply if upgrading.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2 flex items-center">
+                                <i data-lucide="help-circle" class="w-5 h-5 text-blue-600 mr-2"></i>
+                                What is included in the student registration?
+                            </h3>
+                            <p class="text-gray-700 text-sm ml-7">Student registration includes the same benefits as regular registration. Valid student ID must be presented at registration desk.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2 flex items-center">
+                                <i data-lucide="help-circle" class="w-5 h-5 text-blue-600 mr-2"></i>
+                                Can I register on-site?
+                            </h3>
+                            <p class="text-gray-700 text-sm ml-7">Yes, on-site registration will be available, but rates will be higher. We recommend registering online in advance.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2 flex items-center">
+                                <i data-lucide="help-circle" class="w-5 h-5 text-blue-600 mr-2"></i>
+                                Will I receive a certificate of attendance?
+                            </h3>
+                            <p class="text-gray-700 text-sm ml-7">Yes, all registered participants will receive a certificate of attendance after the congress.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2 flex items-center">
+                                <i data-lucide="help-circle" class="w-5 h-5 text-blue-600 mr-2"></i>
+                                Are continuing education credits available?
+                            </h3>
+                            <p class="text-gray-700 text-sm ml-7">Information about continuing education credits will be announced closer to the congress date.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl shadow-xl p-8 md:p-12 text-white text-center">
+                <h2 class="text-3xl font-bold mb-4">Ready to Join Us?</h2>
+                <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                    Don't miss this opportunity to be part of Asia's premier pharmaceutical congress. Register early to secure the best rates.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="mailto:info@pat.or.th?subject=FAPA 2026 Registration Inquiry" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition inline-flex items-center justify-center">
+                        <i data-lucide="bell" class="w-5 h-5 mr-2"></i>
+                        Get Notified
+                    </a>
+                    <a href="program.html" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition inline-flex items-center justify-center">
+                        <i data-lucide="calendar" class="w-5 h-5 mr-2"></i>
+                        View Program
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">FAPA 2026</h3>
+                    <p class="text-sm">The 27th FAPA Congress in Bangkok, Thailand</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="program.html" class="hover:text-white">Program</a></li>
+                        <li><a href="abstracts.html" class="hover:text-white">Abstracts</a></li>
+                        <li><a href="register.html" class="hover:text-white">Register</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Information</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="venue.html" class="hover:text-white">Venue</a></li>
+                        <li><a href="sponsors.html" class="hover:text-white">Sponsors</a></li>
+                        <li><a href="committee.html" class="hover:text-white">Committee</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <p class="text-sm">The Pharmacy Association of Thailand</p>
+                    <p class="text-sm mt-2">Email: info@pat.or.th</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2026 FAPA Congress. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call for Abstracts | FAPA 2026 Congress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">FAPA</span>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">FAPA 2026</div>
+                            <div class="text-xs text-gray-600">November 3-7, 2026</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center">
+                            About
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block w-48 bg-white shadow-xl rounded-lg py-2 mt-2">
+                            <a href="welcome.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Welcome Messages</a>
+                            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">About FAPA & PAT</a>
+                            <a href="committee.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Organizing Committee</a>
+                        </div>
+                    </div>
+                    <a href="program.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Program</a>
+                    <a href="abstracts.html" class="text-blue-600 hover:text-blue-700 font-medium transition">Call for Abstracts</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center">
+                            Info
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block w-48 bg-white shadow-xl rounded-lg py-2 mt-2">
+                            <a href="venue.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Venue & Travel</a>
+                            <a href="sponsors.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Sponsors & Events</a>
+                        </div>
+                    </div>
+                    <a href="register.html" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition font-medium">Register</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="welcome.html" class="block py-2 text-gray-700 hover:text-blue-600">Welcome Messages</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">About FAPA & PAT</a>
+                <a href="committee.html" class="block py-2 text-gray-700 hover:text-blue-600">Organizing Committee</a>
+                <a href="program.html" class="block py-2 text-gray-700 hover:text-blue-600">Program</a>
+                <a href="abstracts.html" class="block py-2 text-blue-600 font-medium">Call for Abstracts</a>
+                <a href="venue.html" class="block py-2 text-gray-700 hover:text-blue-600">Venue & Travel</a>
+                <a href="sponsors.html" class="block py-2 text-gray-700 hover:text-blue-600">Sponsors & Events</a>
+                <a href="register.html" class="block py-2 bg-blue-600 text-white text-center rounded-full hover:bg-blue-700">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Call for Abstracts</h1>
+                <p class="text-xl text-blue-100">Share your research at FAPA 2026 Congress</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Submit Banner -->
+            <div class="mb-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl shadow-xl p-8 md:p-12 text-white text-center">
+                <div class="flex items-center justify-center mb-6">
+                    <i data-lucide="rocket" class="w-16 h-16"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Abstract Submission is Open!</h2>
+                <p class="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
+                    We invite researchers, clinicians, and pharmacy professionals to submit abstracts showcasing original research, case studies, and innovative practices.
+                </p>
+                <a href="#" class="inline-flex items-center bg-white text-green-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-green-50 transition shadow-lg">
+                    <i data-lucide="file-plus" class="w-6 h-6 mr-2"></i>
+                    Submit Your Abstract
+                </a>
+            </div>
+
+            <!-- Important Dates -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Important Dates</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="calendar-plus" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">Submission Opens</h3>
+                        <p class="text-2xl font-bold text-blue-600 mb-1">TBA</p>
+                        <p class="text-sm text-gray-600">Check back soon</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="calendar-x" class="w-8 h-8 text-red-600"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">Submission Deadline</h3>
+                        <p class="text-2xl font-bold text-red-600 mb-1">TBA</p>
+                        <p class="text-sm text-gray-600">Don't miss it!</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="check-circle" class="w-8 h-8 text-green-600"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">Notification Date</h3>
+                        <p class="text-2xl font-bold text-green-600 mb-1">TBA</p>
+                        <p class="text-sm text-gray-600">Acceptance notice</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="presentation" class="w-8 h-8 text-purple-600"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">Congress Dates</h3>
+                        <p class="text-2xl font-bold text-purple-600 mb-1">Nov 3-7</p>
+                        <p class="text-sm text-gray-600">2026</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Presentation Types -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Presentation Types</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Oral Presentation -->
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mr-4">
+                                <i data-lucide="mic" class="w-8 h-8 text-indigo-600"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Oral Presentation</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <p class="text-gray-700">
+                                Present your research in a 10-minute talk followed by 5 minutes of Q&A in front of an audience of peers.
+                            </p>
+                            <div class="bg-indigo-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-gray-900 mb-2">What to Expect:</h4>
+                                <ul class="space-y-1 text-sm text-gray-700">
+                                    <li>• 10-minute presentation time</li>
+                                    <li>• 5-minute Q&A session</li>
+                                    <li>• Scheduled in parallel sessions</li>
+                                    <li>• PowerPoint slides recommended</li>
+                                    <li>• Competitive selection process</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Poster Presentation -->
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-pink-100 rounded-lg flex items-center justify-center mr-4">
+                                <i data-lucide="layout-grid" class="w-8 h-8 text-pink-600"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Poster Presentation</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <p class="text-gray-700">
+                                Display your research on a poster board and engage in one-on-one discussions with congress attendees.
+                            </p>
+                            <div class="bg-pink-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-gray-900 mb-2">What to Expect:</h4>
+                                <ul class="space-y-1 text-sm text-gray-700">
+                                    <li>• Dedicated poster session times</li>
+                                    <li>• Face-to-face discussions</li>
+                                    <li>• Standard size: A0 portrait</li>
+                                    <li>• Awards for best posters</li>
+                                    <li>• Great networking opportunity</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submission Guidelines -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Submission Guidelines</h2>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 max-w-4xl mx-auto">
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                <span class="text-blue-600 font-bold">1</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 mb-2">Abstract Structure</h3>
+                                <p class="text-gray-700">
+                                    Abstracts should be structured with clear sections: <strong>Background/Objectives, Methods, Results, and Conclusions</strong>. Maximum 250-300 words.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                <span class="text-blue-600 font-bold">2</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 mb-2">Language</h3>
+                                <p class="text-gray-700">
+                                    All abstracts must be submitted in <strong>English</strong>. Please ensure proper grammar and spelling before submission.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                <span class="text-blue-600 font-bold">3</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 mb-2">Authors & Affiliations</h3>
+                                <p class="text-gray-700">
+                                    Include all author names, affiliations, and a <strong>presenting author</strong> designation. Corresponding author contact information is required.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                <span class="text-blue-600 font-bold">4</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 mb-2">Topic Selection</h3>
+                                <p class="text-gray-700">
+                                    Choose the most appropriate topic area for your abstract from the conference tracks listed on the <a href="program.html" class="text-blue-600 hover:underline">Program page</a>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                <span class="text-blue-600 font-bold">5</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 mb-2">Presentation Preference</h3>
+                                <p class="text-gray-700">
+                                    Indicate your preference for <strong>oral or poster presentation</strong>. The scientific committee will make final decisions based on quality and program balance.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                <span class="text-blue-600 font-bold">6</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 mb-2">Review Process</h3>
+                                <p class="text-gray-700">
+                                    All abstracts undergo <strong>blind peer review</strong> by the scientific committee. Acceptance is based on scientific merit, originality, and relevance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topics -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Conference Topics</h2>
+                
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div class="flex items-center">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mr-2 flex-shrink-0"></i>
+                            <span class="text-gray-800">Pharmaceutical Sciences</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mr-2 flex-shrink-0"></i>
+                            <span class="text-gray-800">Clinical Pharmacy</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mr-2 flex-shrink-0"></i>
+                            <span class="text-gray-800">Community Pharmacy</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mr-2 flex-shrink-0"></i>
+                            <span class="text-gray-800">Innovation & Technology</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mr-2 flex-shrink-0"></i>
+                            <span class="text-gray-800">Natural Products</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-blue-600 mr-2 flex-shrink-0"></i>
+                            <span class="text-gray-800">Education & Sustainability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Awards -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Best Presentation Awards</h2>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl shadow-lg p-8 text-white text-center">
+                        <i data-lucide="trophy" class="w-16 h-16 mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">Best Oral</h3>
+                        <p class="text-yellow-100">Recognition and prize for outstanding oral presentation</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-gray-400 to-gray-600 rounded-xl shadow-lg p-8 text-white text-center">
+                        <i data-lucide="award" class="w-16 h-16 mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">Best Poster</h3>
+                        <p class="text-gray-100">Recognition and prize for outstanding poster presentation</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl shadow-lg p-8 text-white text-center">
+                        <i data-lucide="star" class="w-16 h-16 mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">Young Investigator</h3>
+                        <p class="text-orange-100">Special award for outstanding young researchers</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl shadow-xl p-8 md:p-12 text-white text-center">
+                <h2 class="text-3xl font-bold mb-4">Ready to Share Your Research?</h2>
+                <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                    Submit your abstract today and join the conversation at Asia's premier pharmaceutical congress. Showcase your work to an international audience of pharmacy professionals.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition inline-flex items-center justify-center">
+                        <i data-lucide="file-plus" class="w-5 h-5 mr-2"></i>
+                        Submit Abstract
+                    </a>
+                    <a href="program.html" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition inline-flex items-center justify-center">
+                        <i data-lucide="info" class="w-5 h-5 mr-2"></i>
+                        View Program
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">FAPA 2026</h3>
+                    <p class="text-sm">The 27th FAPA Congress in Bangkok, Thailand</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="program.html" class="hover:text-white">Program</a></li>
+                        <li><a href="abstracts.html" class="hover:text-white">Abstracts</a></li>
+                        <li><a href="register.html" class="hover:text-white">Register</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Information</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="venue.html" class="hover:text-white">Venue</a></li>
+                        <li><a href="sponsors.html" class="hover:text-white">Sponsors</a></li>
+                        <li><a href="committee.html" class="hover:text-white">Committee</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <p class="text-sm">The Pharmacy Association of Thailand</p>
+                    <p class="text-sm mt-2">Email: info@pat.or.th</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2026 FAPA Congress. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

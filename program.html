@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Program | FAPA 2026 Congress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">FAPA</span>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">FAPA 2026</div>
+                            <div class="text-xs text-gray-600">November 3-7, 2026</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center">
+                            About
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block w-48 bg-white shadow-xl rounded-lg py-2 mt-2">
+                            <a href="welcome.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Welcome Messages</a>
+                            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">About FAPA & PAT</a>
+                            <a href="committee.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Organizing Committee</a>
+                        </div>
+                    </div>
+                    <a href="program.html" class="text-blue-600 hover:text-blue-700 font-medium transition">Program</a>
+                    <a href="abstracts.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Call for Abstracts</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center">
+                            Info
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block w-48 bg-white shadow-xl rounded-lg py-2 mt-2">
+                            <a href="venue.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Venue & Travel</a>
+                            <a href="sponsors.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Sponsors & Events</a>
+                        </div>
+                    </div>
+                    <a href="register.html" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition font-medium">Register</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="welcome.html" class="block py-2 text-gray-700 hover:text-blue-600">Welcome Messages</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">About FAPA & PAT</a>
+                <a href="committee.html" class="block py-2 text-gray-700 hover:text-blue-600">Organizing Committee</a>
+                <a href="program.html" class="block py-2 text-blue-600 font-medium">Program</a>
+                <a href="abstracts.html" class="block py-2 text-gray-700 hover:text-blue-600">Call for Abstracts</a>
+                <a href="venue.html" class="block py-2 text-gray-700 hover:text-blue-600">Venue & Travel</a>
+                <a href="sponsors.html" class="block py-2 text-gray-700 hover:text-blue-600">Sponsors & Events</a>
+                <a href="register.html" class="block py-2 bg-blue-600 text-white text-center rounded-full hover:bg-blue-700">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Scientific Program</h1>
+                <p class="text-xl text-blue-100">Five days of knowledge sharing and innovation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Program at a Glance -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Program at a Glance</h2>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+                                <tr>
+                                    <th class="px-6 py-4 text-left font-semibold">Time</th>
+                                    <th class="px-6 py-4 text-left font-semibold">Day 1<br><span class="text-sm font-normal">Nov 3, 2026</span></th>
+                                    <th class="px-6 py-4 text-left font-semibold">Day 2<br><span class="text-sm font-normal">Nov 4, 2026</span></th>
+                                    <th class="px-6 py-4 text-left font-semibold">Day 3<br><span class="text-sm font-normal">Nov 5, 2026</span></th>
+                                    <th class="px-6 py-4 text-left font-semibold">Day 4<br><span class="text-sm font-normal">Nov 6, 2026</span></th>
+                                    <th class="px-6 py-4 text-left font-semibold">Day 5<br><span class="text-sm font-normal">Nov 7, 2026</span></th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="bg-gray-50">
+                                    <td class="px-6 py-4 font-medium text-gray-900">08:00-09:00</td>
+                                    <td class="px-6 py-4 text-gray-700">Registration</td>
+                                    <td class="px-6 py-4 text-gray-700">Registration</td>
+                                    <td class="px-6 py-4 text-gray-700">Registration</td>
+                                    <td class="px-6 py-4 text-gray-700">Registration</td>
+                                    <td class="px-6 py-4 text-gray-700">Registration</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-medium text-gray-900">09:00-10:30</td>
+                                    <td class="px-6 py-4 bg-blue-50 font-semibold text-blue-900">Opening Ceremony</td>
+                                    <td class="px-6 py-4 bg-green-50 font-semibold text-green-900">Plenary Lecture 2</td>
+                                    <td class="px-6 py-4 bg-green-50 font-semibold text-green-900">Plenary Lecture 3</td>
+                                    <td class="px-6 py-4 bg-green-50 font-semibold text-green-900">Plenary Lecture 4</td>
+                                    <td class="px-6 py-4 bg-green-50 font-semibold text-green-900">Plenary Lecture 5</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="px-6 py-4 font-medium text-gray-900">10:30-11:00</td>
+                                    <td colspan="5" class="px-6 py-4 text-center bg-yellow-50 text-yellow-900 font-medium">Coffee Break & Exhibition Visit</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-medium text-gray-900">11:00-12:30</td>
+                                    <td class="px-6 py-4 bg-green-50 font-semibold text-green-900">Plenary Lecture 1</td>
+                                    <td class="px-6 py-4 bg-purple-50 text-purple-900">Symposium 2A</td>
+                                    <td class="px-6 py-4 bg-purple-50 text-purple-900">Symposium 3A</td>
+                                    <td class="px-6 py-4 bg-purple-50 text-purple-900">Symposium 4A</td>
+                                    <td class="px-6 py-4 bg-purple-50 text-purple-900">Symposium 5A</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="px-6 py-4 font-medium text-gray-900">12:30-13:30</td>
+                                    <td colspan="5" class="px-6 py-4 text-center bg-orange-50 text-orange-900 font-medium">Lunch Break</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-medium text-gray-900">13:30-15:00</td>
+                                    <td class="px-6 py-4 bg-purple-50 text-purple-900">Symposium 1A</td>
+                                    <td class="px-6 py-4 bg-purple-50 text-purple-900">Symposium 2B</td>
+                                    <td class="px-6 py-4 bg-purple-50 text-purple-900">Symposium 3B</td>
+                                    <td class="px-6 py-4 bg-purple-50 text-purple-900">Symposium 4B</td>
+                                    <td class="px-6 py-4 bg-blue-50 font-semibold text-blue-900">Closing Ceremony</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="px-6 py-4 font-medium text-gray-900">15:00-15:30</td>
+                                    <td colspan="5" class="px-6 py-4 text-center bg-yellow-50 text-yellow-900 font-medium">Coffee Break & Exhibition Visit</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-medium text-gray-900">15:30-17:00</td>
+                                    <td class="px-6 py-4 bg-indigo-50 text-indigo-900">Oral Presentations 1</td>
+                                    <td class="px-6 py-4 bg-indigo-50 text-indigo-900">Oral Presentations 2</td>
+                                    <td class="px-6 py-4 bg-indigo-50 text-indigo-900">Oral Presentations 3</td>
+                                    <td class="px-6 py-4 bg-indigo-50 text-indigo-900">Oral Presentations 4</td>
+                                    <td class="px-6 py-4 text-gray-400">-</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="px-6 py-4 font-medium text-gray-900">17:00-18:30</td>
+                                    <td class="px-6 py-4 bg-pink-50 text-pink-900">Poster Session 1</td>
+                                    <td class="px-6 py-4 bg-pink-50 text-pink-900">Poster Session 2</td>
+                                    <td class="px-6 py-4 bg-pink-50 text-pink-900">Poster Session 3</td>
+                                    <td class="px-6 py-4 bg-pink-50 text-pink-900">Poster Session 4</td>
+                                    <td class="px-6 py-4 text-gray-400">-</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-medium text-gray-900">18:30-21:00</td>
+                                    <td class="px-6 py-4 bg-red-100 font-semibold text-red-900">Welcome Reception</td>
+                                    <td class="px-6 py-4 text-gray-400">-</td>
+                                    <td class="px-6 py-4 bg-red-100 font-semibold text-red-900">Gala Dinner</td>
+                                    <td class="px-6 py-4 bg-red-100 font-semibold text-red-900">Cultural Night</td>
+                                    <td class="px-6 py-4 text-gray-400">-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="mt-6 bg-blue-50 border-l-4 border-blue-500 p-4">
+                    <p class="text-sm text-gray-700">
+                        <i data-lucide="info" class="w-4 h-4 inline mr-2"></i>
+                        <strong>Note:</strong> Detailed program with speakers and topics will be announced soon. Please check back for updates.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Session Types -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Session Types</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="mic" class="w-6 h-6 text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Plenary Lectures</h3>
+                        <p class="text-gray-600 text-sm">Keynote presentations by renowned international speakers on cutting-edge pharmaceutical topics</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="users-round" class="w-6 h-6 text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Symposiums</h3>
+                        <p class="text-gray-600 text-sm">Themed sessions featuring expert panels discussing specific pharmaceutical challenges and innovations</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="presentation" class="w-6 h-6 text-indigo-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Oral Presentations</h3>
+                        <p class="text-gray-600 text-sm">Selected abstract presentations showcasing original research and case studies from participants</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="layout-grid" class="w-6 h-6 text-pink-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Poster Sessions</h3>
+                        <p class="text-gray-600 text-sm">Interactive poster displays with opportunities for one-on-one discussions with researchers</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Keynote Speakers -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Keynote Speakers</h2>
+                
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 md:p-12 text-center">
+                    <i data-lucide="calendar-clock" class="w-16 h-16 text-blue-600 mx-auto mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Coming Soon</h3>
+                    <p class="text-gray-700 text-lg max-w-2xl mx-auto">
+                        We are excited to announce our distinguished keynote speakers soon. Stay tuned for updates on renowned experts who will share their insights on innovation, collaboration, and sustainability in pharmacy.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Topics & Tracks -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Conference Topics & Tracks</h2>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                            <i data-lucide="flask-conical" class="w-5 h-5 text-blue-600 mr-2"></i>
+                            Pharmaceutical Sciences
+                        </h3>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li>• Drug Discovery & Development</li>
+                            <li>• Pharmaceutical Technology</li>
+                            <li>• Analytical Methods</li>
+                            <li>• Quality Control & Assurance</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                            <i data-lucide="stethoscope" class="w-5 h-5 text-green-600 mr-2"></i>
+                            Clinical Pharmacy
+                        </h3>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li>• Pharmaceutical Care</li>
+                            <li>• Clinical Pharmacokinetics</li>
+                            <li>• Pharmacotherapy</li>
+                            <li>• Medication Safety</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                            <i data-lucide="heart-pulse" class="w-5 h-5 text-red-600 mr-2"></i>
+                            Community Pharmacy
+                        </h3>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li>• Community Practice</li>
+                            <li>• Patient Counseling</li>
+                            <li>• Health Promotion</li>
+                            <li>• Primary Care Services</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                            <i data-lucide="dna" class="w-5 h-5 text-purple-600 mr-2"></i>
+                            Innovation & Technology
+                        </h3>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li>• Digital Health</li>
+                            <li>• Personalized Medicine</li>
+                            <li>• AI in Pharmacy</li>
+                            <li>• Novel Drug Delivery</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                            <i data-lucide="leaf" class="w-5 h-5 text-green-600 mr-2"></i>
+                            Natural Products
+                        </h3>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li>• Herbal Medicine</li>
+                            <li>• Traditional Pharmacy</li>
+                            <li>• Phytochemistry</li>
+                            <li>• Natural Product Research</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                            <i data-lucide="book-open" class="w-5 h-5 text-indigo-600 mr-2"></i>
+                            Education & Sustainability
+                        </h3>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li>• Pharmacy Education</li>
+                            <li>• Professional Development</li>
+                            <li>• Sustainable Practices</li>
+                            <li>• Healthcare Policy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="mt-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl shadow-xl p-8 md:p-12 text-white text-center">
+                <h2 class="text-3xl font-bold mb-4">Ready to Join Us?</h2>
+                <p class="text-xl text-blue-100 mb-8">
+                    Don't miss this opportunity to be part of Asia's premier pharmaceutical congress
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="abstracts.html" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition inline-flex items-center justify-center">
+                        <i data-lucide="file-text" class="w-5 h-5 mr-2"></i>
+                        Submit Abstract
+                    </a>
+                    <a href="register.html" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition inline-flex items-center justify-center">
+                        <i data-lucide="user-plus" class="w-5 h-5 mr-2"></i>
+                        Register Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">FAPA 2026</h3>
+                    <p class="text-sm">The 27th FAPA Congress in Bangkok, Thailand</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="program.html" class="hover:text-white">Program</a></li>
+                        <li><a href="abstracts.html" class="hover:text-white">Abstracts</a></li>
+                        <li><a href="register.html" class="hover:text-white">Register</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Information</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="venue.html" class="hover:text-white">Venue</a></li>
+                        <li><a href="sponsors.html" class="hover:text-white">Sponsors</a></li>
+                        <li><a href="committee.html" class="hover:text-white">Committee</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <p class="text-sm">The Pharmacy Association of Thailand</p>
+                    <p class="text-sm mt-2">Email: info@pat.or.th</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2026 FAPA Congress. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

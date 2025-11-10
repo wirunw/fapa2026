@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | FAPA 2026 Congress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">FAPA</span>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">FAPA 2026</div>
+                            <div class="text-xs text-gray-600">November 3-7, 2026</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+                    <div class="relative group">
+                        <button class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+                            About
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block w-48 bg-white shadow-xl rounded-lg py-2 mt-2">
+                            <a href="welcome.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Welcome Messages</a>
+                            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">About FAPA & PAT</a>
+                            <a href="committee.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Organizing Committee</a>
+                        </div>
+                    </div>
+                    <a href="program.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Program</a>
+                    <a href="abstracts.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Call for Abstracts</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center">
+                            Info
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block w-48 bg-white shadow-xl rounded-lg py-2 mt-2">
+                            <a href="venue.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Venue & Travel</a>
+                            <a href="sponsors.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Sponsors & Events</a>
+                        </div>
+                    </div>
+                    <a href="register.html" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition font-medium">Register</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="welcome.html" class="block py-2 text-gray-700 hover:text-blue-600">Welcome Messages</a>
+                <a href="about.html" class="block py-2 text-blue-600 font-medium">About FAPA & PAT</a>
+                <a href="committee.html" class="block py-2 text-gray-700 hover:text-blue-600">Organizing Committee</a>
+                <a href="program.html" class="block py-2 text-gray-700 hover:text-blue-600">Program</a>
+                <a href="abstracts.html" class="block py-2 text-gray-700 hover:text-blue-600">Call for Abstracts</a>
+                <a href="venue.html" class="block py-2 text-gray-700 hover:text-blue-600">Venue & Travel</a>
+                <a href="sponsors.html" class="block py-2 text-gray-700 hover:text-blue-600">Sponsors & Events</a>
+                <a href="register.html" class="block py-2 bg-blue-600 text-white text-center rounded-full hover:bg-blue-700">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">About FAPA & PAT</h1>
+                <p class="text-xl text-blue-100">Learn about our organizations and mission</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- About FAPA -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                            <i data-lucide="globe" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900">About FAPA</h2>
+                    </div>
+                    
+                    <div class="space-y-4 text-gray-700 leading-relaxed">
+                        <p>
+                            The <strong>Federation of Asian Pharmaceutical Associations (FAPA)</strong> is the premier regional organization dedicated to advancing the pharmaceutical profession across Asia.
+                        </p>
+                        <p>
+                            Founded to promote collaboration and excellence in pharmacy practice, education, and research, FAPA brings together pharmaceutical associations from across the Asian continent.
+                        </p>
+                        
+                        <div class="bg-blue-50 p-6 rounded-lg mt-6">
+                            <h3 class="font-semibold text-lg text-gray-900 mb-3">Our Mission</h3>
+                            <p class="text-gray-700">
+                                To enhance pharmaceutical care and public health across Asia through professional development, knowledge exchange, and collaborative initiatives that support pharmacists in their vital role in healthcare systems.
+                            </p>
+                        </div>
+
+                        <div class="bg-blue-50 p-6 rounded-lg mt-4">
+                            <h3 class="font-semibold text-lg text-gray-900 mb-3">Our Vision</h3>
+                            <p class="text-gray-700">
+                                To be the leading voice for pharmaceutical excellence in Asia, fostering innovation, sustainability, and collaboration among pharmaceutical professionals for improved patient outcomes and community health.
+                            </p>
+                        </div>
+
+                        <div class="mt-6">
+                            <h3 class="font-semibold text-lg text-gray-900 mb-3">Key Activities</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                                    <span>Organizing biennial congresses to facilitate knowledge sharing</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                                    <span>Supporting pharmaceutical education and research initiatives</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                                    <span>Promoting professional standards and best practices</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                                    <span>Strengthening regional collaboration and partnerships</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-6 pt-6 border-t">
+                            <a href="https://fapa-online.org" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
+                                Visit FAPA Website
+                                <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About PAT -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mr-4">
+                            <i data-lucide="building-2" class="w-8 h-8 text-indigo-600"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900">About PAT</h2>
+                    </div>
+                    
+                    <div class="space-y-4 text-gray-700 leading-relaxed">
+                        <p>
+                            The <strong>Pharmacy Association of Thailand (PAT)</strong> under Royal Patronage of His Majesty the King is the national professional organization representing pharmacists throughout Thailand.
+                        </p>
+                        <p>
+                            Established to promote the pharmaceutical profession and protect public health, PAT serves as the voice of Thai pharmacists and works to elevate pharmacy practice standards across the nation.
+                        </p>
+                        
+                        <div class="bg-indigo-50 p-6 rounded-lg mt-6">
+                            <h3 class="font-semibold text-lg text-gray-900 mb-3">Our Mission</h3>
+                            <p class="text-gray-700">
+                                To advance the pharmaceutical profession in Thailand by supporting pharmacists' professional development, promoting pharmaceutical care excellence, and advocating for policies that enhance medication safety and public health.
+                            </p>
+                        </div>
+
+                        <div class="bg-indigo-50 p-6 rounded-lg mt-4">
+                            <h3 class="font-semibold text-lg text-gray-900 mb-3">Our Vision</h3>
+                            <p class="text-gray-700">
+                                To be Thailand's leading professional pharmaceutical organization, recognized for our commitment to pharmaceutical excellence, innovation in practice, and dedication to improving healthcare outcomes for all Thai citizens.
+                            </p>
+                        </div>
+
+                        <div class="mt-6">
+                            <h3 class="font-semibold text-lg text-gray-900 mb-3">Core Responsibilities</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                                    <span>Continuing education and professional development programs</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                                    <span>Setting and maintaining professional practice standards</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                                    <span>Advocacy for pharmacists' rights and professional interests</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                                    <span>Collaboration with government and healthcare organizations</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-6">
+                            <div class="flex items-start">
+                                <i data-lucide="award" class="w-5 h-5 text-yellow-600 mr-3 mt-0.5 flex-shrink-0"></i>
+                                <p class="text-sm text-gray-700">
+                                    <strong>Royal Patronage:</strong> PAT is honored to operate under the Royal Patronage of His Majesty the King, reflecting the importance of the pharmaceutical profession in Thai society.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-6 border-t">
+                            <a href="https://www.pat.or.th" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
+                                Visit PAT Website
+                                <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAPA 2026 Section -->
+            <div class="mt-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl shadow-xl p-8 md:p-12 text-white">
+                <div class="text-center max-w-4xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">FAPA 2026 Congress</h2>
+                    <p class="text-xl text-blue-100 mb-4">
+                        "Advancing Pharmacy through Innovation, Collaboration, and Sustainability"
+                    </p>
+                    <p class="text-lg text-blue-100 leading-relaxed mb-8">
+                        The 27th FAPA Congress brings together pharmaceutical professionals from across Asia and beyond to share knowledge, foster collaboration, and advance the profession. Join us in Bangkok for five days of inspiring presentations, networking opportunities, and professional growth.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="register.html" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition inline-flex items-center justify-center">
+                            Register Now
+                            <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                        </a>
+                        <a href="program.html" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition inline-flex items-center justify-center">
+                            View Program
+                            <i data-lucide="calendar" class="w-5 h-5 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">FAPA 2026</h3>
+                    <p class="text-sm">The 27th FAPA Congress in Bangkok, Thailand</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="program.html" class="hover:text-white">Program</a></li>
+                        <li><a href="abstracts.html" class="hover:text-white">Abstracts</a></li>
+                        <li><a href="register.html" class="hover:text-white">Register</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Information</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="venue.html" class="hover:text-white">Venue</a></li>
+                        <li><a href="sponsors.html" class="hover:text-white">Sponsors</a></li>
+                        <li><a href="committee.html" class="hover:text-white">Committee</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <p class="text-sm">The Pharmacy Association of Thailand</p>
+                    <p class="text-sm mt-2">Email: info@pat.or.th</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2026 FAPA Congress. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
