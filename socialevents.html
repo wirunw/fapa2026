@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Events | FAPA 2026 Congress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .dropdown-menu {
+            display: none;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block !important;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            right: 0;
+            height: 8px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <img src="https://i.postimg.cc/Dw4yGkgJ/FAPA-logo.jpg" alt="FAPA Logo" class="h-12 w-auto">
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">FAPA 2026</div>
+                            <div class="text-xs text-gray-600">November 3-7, 2026</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">
+                            About
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="welcome.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Welcome Messages</a>
+                            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">About FAPA & PAT</a>
+                            <a href="committee.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Organizing Committee</a>
+                        </div>
+                    </div>
+                    <a href="program.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Program</a>
+                    <a href="abstracts.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Call for Abstracts</a>
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">
+                            Info
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="venue.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Venue & Travel</a>
+                            <a href="sponsors.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Sponsors & Events</a>
+                        </div>
+                    </div>
+                    <a href="register.html" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition font-medium">Register</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="welcome.html" class="block py-2 text-gray-700 hover:text-blue-600">Welcome Messages</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">About FAPA & PAT</a>
+                <a href="committee.html" class="block py-2 text-gray-700 hover:text-blue-600">Organizing Committee</a>
+                <a href="program.html" class="block py-2 text-gray-700 hover:text-blue-600">Program</a>
+                <a href="abstracts.html" class="block py-2 text-gray-700 hover:text-blue-600">Call for Abstracts</a>
+                <a href="venue.html" class="block py-2 text-gray-700 hover:text-blue-600">Venue & Travel</a>
+                <a href="sponsors.html" class="block py-2 text-gray-700 hover:text-blue-600">Sponsors & Events</a>
+                <a href="register.html" class="block py-2 bg-blue-600 text-white text-center rounded-full hover:bg-blue-700">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-pink-600 to-purple-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Social Events</h1>
+                <p class="text-xl text-pink-100">Network and celebrate with colleagues from around the world</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Introduction -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <p class="text-lg text-gray-600">
+                    FAPA 2026 offers several exciting social events designed to foster networking, 
+                    celebrate pharmaceutical excellence, and showcase Thai culture and hospitality.
+                </p>
+            </div>
+
+            <!-- Events -->
+            <div class="space-y-12">
+                
+                <!-- Welcome Reception -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                    <div class="grid md:grid-cols-2">
+                        <div class="bg-gradient-to-br from-blue-500 to-cyan-500 p-12 flex flex-col justify-center items-center text-white">
+                            <i data-lucide="glass-water" class="w-32 h-32 mb-6"></i>
+                            <h2 class="text-3xl font-bold mb-2">Welcome Reception</h2>
+                            <p class="text-blue-100 text-center">Kick off FAPA 2026 with colleagues</p>
+                        </div>
+                        <div class="p-8">
+                            <div class="space-y-6">
+                                <div>
+                                    <div class="flex items-center text-gray-600 mb-2">
+                                        <i data-lucide="calendar" class="w-5 h-5 mr-2 text-blue-600"></i>
+                                        <span class="font-semibold">Date & Time</span>
+                                    </div>
+                                    <p class="text-gray-700 ml-7">Monday, November 3, 2026 | 19:00 - 21:00</p>
+                                </div>
+                                <div>
+                                    <div class="flex items-center text-gray-600 mb-2">
+                                        <i data-lucide="map-pin" class="w-5 h-5 mr-2 text-blue-600"></i>
+                                        <span class="font-semibold">Venue</span>
+                                    </div>
+                                    <p class="text-gray-700 ml-7">Grand Ballroom, Impact Muangthong Thani</p>
+                                </div>
+                                <div>
+                                    <div class="flex items-center text-gray-600 mb-2">
+                                        <i data-lucide="users" class="w-5 h-5 mr-2 text-blue-600"></i>
+                                        <span class="font-semibold">Description</span>
+                                    </div>
+                                    <p class="text-gray-700 ml-7">
+                                        Join us for an evening of networking and refreshments as we officially open FAPA 2026. 
+                                        Meet fellow delegates, speakers, and exhibitors in a relaxed atmosphere with Thai-inspired 
+                                        canapés and beverages.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="flex items-center text-gray-600 mb-2">
+                                        <i data-lucide="shirt" class="w-5 h-5 mr-2 text-blue-600"></i>
+                                        <span class="font-semibold">Dress Code</span>
+                                    </div>
+                                    <p class="text-gray-700 ml-7">Smart Casual</p>
+                                </div>
+                                <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                    <div class="flex items-center text-green-700">
+                                        <i data-lucide="check-circle" class="w-5 h-5 mr-2"></i>
+                                        <span class="font-semibold">Included in registration fee</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cultural Night -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                    <div class="grid md:grid-cols-2">
+                        <div class="order-2 md:order-1 p-8">
+                            <div class="space-y-6">
+                                <div>
+                                    <div class="flex items-center text-gray-600 mb-2">
+                                        <i data-lucide="calendar" class="w-5 h-5 mr-2 text-purple-600"></i>
+                                        <span class="font-semibold">Date & Time</span>
+                                    </div>
+                                    <p class="text-gray-700 ml-7">Wednesday, November 5, 2026 | 19:00 - 22:00</p>
+                                </div>
+                                <div>
+                                    <div class="flex items-center text-gray-600 mb-2">
+                                        <i data-lucide="map-pin" class="w-5 h-5 mr-2 text-purple-600"></i>
+                                        <span class="font-semibold">Venue</span>
+                                    </div>
+                                    <p class="text-gray-700 ml-7">Outdoor Pavilion, Impact Muangthong Thani</p>
+                                </div>
+                                <div>
+                                    <div class="flex items-center text-gray-600 mb-2">
+                                        <i data-lucide="sparkles" class="w-5 h-5 mr-2 text-purple-600"></i>
+                                        <span class="font-semibold">Description</span>
+                                    </div>
+                                    <p class="text-gray-700 ml-7">
+                                        Experience the rich culture of Thailand with traditional dance performances, live Thai music, 
+                                        and authentic Thai cuisine. Enjoy cultural displays and interactive activities showcasing 
+                                        Thai heritage and traditions.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="flex items-center text-gray-600 mb-2">
+                                        <i data-lucide="shirt" class="w-5 h-5 mr-2 text-purple-600"></i>
+                                        <span class="font-semibold">Dress Code</span>
+                                    </div>
+                                    <p class="text-gray-700 ml-7">Casual / Thai Traditional Attire Welcome</p>
+                                </div>
+                                <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                    <div class="flex items-center text-green-700">
+                                        <i data-lucide="check-circle" class="w-5 h-5 mr-2"></i>
+                                        <span class="font-semibold">Included in registration fee</span>
+                                    </div>
+                                </div>
+                                <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                                    <p class="text-blue-700 text-sm">
+                                        <i data-lucide="info" class="w-4 h-4 inline mr-1"></i>
+                                        Special performances by renowned Thai artists
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-1 md:order-2 bg-gradient-to-br from-purple-500 to-pink-500 p-12 flex flex-col justify-center items-center text-white">
+                            <i data-lucide="music" class="w-32 h-32 mb-6"></i>
+                            <h2 class="text-3xl font-bold mb-2">Cultural Night</h2>
+                            <p class="text-purple-100 text-center">Celebrate Thai Culture & Heritage</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gala Dinner -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                    <div class="grid md:grid-cols-2">
+                        <div class="bg-gradient-to-br from-amber-500 to-orange-500 p-12 flex flex-col justify-center items-center text-white">
+                            <i data-lucide="utensils" class="w-32 h-32 mb-6"></i>
+                            <h2 class="text-3xl font-bold mb-2">Gala Dinner</h2>
+                            <p class="text-amber-100 text-center">An Elegant Evening of Celebration</p>
+                        </div>
+                        <div class="p-8">
+                            <div class="space-y-6">
+                                <div>
+                                    <div class="flex items-center text-gray-600 mb-2">
+                                        <i data-lucide="calendar" class="w-5 h-5 mr-2 text-orange-600"></i>
+                                        <span class="font-semibold">Date & Time</span>
+                                    </div>
+                                    <p class="text-gray-700 ml-7">Thursday, November 6, 2026 | 19:00 - 23:00</p>
+                                </div>
+                                <div>
+                                    <div class="flex items-center text-gray-600 mb-2">
+                                        <i data-lucide="map-pin" class="w-5 h-5 mr-2 text-orange-600"></i>
+                                        <span class="font-semibold">Venue</span>
+                                    </div>
+                                    <p class="text-gray-700 ml-7">Royal Ballroom, Impact Muangthong Thani</p>
+                                </div>
+                                <div>
+                                    <div class="flex items-center text-gray-600 mb-2">
+                                        <i data-lucide="award" class="w-5 h-5 mr-2 text-orange-600"></i>
+                                        <span class="font-semibold">Description</span>
+                                    </div>
+                                    <p class="text-gray-700 ml-7">
+                                        The highlight of FAPA 2026! Join us for an elegant evening featuring a sumptuous 
+                                        international buffet, entertainment, awards ceremony, and dancing. Celebrate achievements 
+                                        in pharmaceutical sciences with colleagues from across Asia.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="flex items-center text-gray-600 mb-2">
+                                        <i data-lucide="shirt" class="w-5 h-5 mr-2 text-orange-600"></i>
+                                        <span class="font-semibold">Dress Code</span>
+                                    </div>
+                                    <p class="text-gray-700 ml-7">Formal / Cocktail Attire</p>
+                                </div>
+                                <div class="bg-orange-50 border border-orange-200 rounded-lg p-4">
+                                    <div class="flex items-center text-orange-700">
+                                        <i data-lucide="ticket" class="w-5 h-5 mr-2"></i>
+                                        <span class="font-semibold">Additional ticket may be required for accompanying persons</span>
+                                    </div>
+                                </div>
+                                <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                                    <p class="text-blue-700 text-sm">
+                                        <i data-lucide="info" class="w-4 h-4 inline mr-1"></i>
+                                        Awards presentation and lucky draw
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Additional Info -->
+            <div class="mt-16 grid md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i data-lucide="info" class="w-6 h-6 mr-2 text-blue-600"></i>
+                        Important Information
+                    </h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="w-5 h-5 mr-2 text-blue-600 flex-shrink-0 mt-0.5"></i>
+                            <span>Welcome Reception and Cultural Night are included in your registration fee</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="w-5 h-5 mr-2 text-blue-600 flex-shrink-0 mt-0.5"></i>
+                            <span>Gala Dinner is included for full congress registrants</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="w-5 h-5 mr-2 text-blue-600 flex-shrink-0 mt-0.5"></i>
+                            <span>Additional tickets for accompanying persons can be purchased separately</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="w-5 h-5 mr-2 text-blue-600 flex-shrink-0 mt-0.5"></i>
+                            <span>Vegetarian and special dietary options available upon request</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check" class="w-5 h-5 mr-2 text-blue-600 flex-shrink-0 mt-0.5"></i>
+                            <span>Please bring your congress badge to all events</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-orange-50 to-pink-50 rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i data-lucide="ticket" class="w-6 h-6 mr-2 text-orange-600"></i>
+                        Ticket Information
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-lg p-4 shadow">
+                            <h4 class="font-bold text-gray-900 mb-2">Accompanying Person - Gala Dinner</h4>
+                            <p class="text-2xl font-bold text-orange-600 mb-1">$80 USD</p>
+                            <p class="text-sm text-gray-600">Includes dinner, entertainment, and beverages</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 shadow">
+                            <h4 class="font-bold text-gray-900 mb-2">Accompanying Person - Cultural Night</h4>
+                            <p class="text-2xl font-bold text-purple-600 mb-1">$40 USD</p>
+                            <p class="text-sm text-gray-600">Includes Thai dinner and cultural performances</p>
+                        </div>
+                        <p class="text-sm text-gray-600 italic">
+                            <i data-lucide="alert-circle" class="w-4 h-4 inline mr-1"></i>
+                            Tickets can be purchased during registration
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-16 bg-gradient-to-r from-pink-600 to-purple-600 rounded-2xl shadow-xl p-8 text-white text-center">
+                <i data-lucide="calendar-heart" class="w-16 h-16 mx-auto mb-4"></i>
+                <h3 class="text-2xl font-bold mb-4">Don't Miss These Memorable Events!</h3>
+                <p class="mb-6 text-pink-100">
+                    Register now to secure your place at all FAPA 2026 social events
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="register.html" class="bg-white text-pink-600 px-8 py-3 rounded-full font-semibold hover:bg-pink-50 transition inline-flex items-center justify-center">
+                        <i data-lucide="user-plus" class="w-5 h-5 mr-2"></i>
+                        Register Now
+                    </a>
+                    <a href="contact.html" class="bg-pink-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-pink-900 transition inline-flex items-center justify-center">
+                        <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">FAPA 2026</h3>
+                    <p class="text-sm">The 27th FAPA Congress in Bangkok, Thailand</p>
+                    <p class="text-sm mt-2">November 3-7, 2026</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="program.html" class="hover:text-white">Program</a></li>
+                        <li><a href="abstracts.html" class="hover:text-white">Abstracts</a></li>
+                        <li><a href="register.html" class="hover:text-white">Register</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Information</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="venue.html" class="hover:text-white">Venue</a></li>
+                        <li><a href="sponsors.html" class="hover:text-white">Sponsors</a></li>
+                        <li><a href="committee.html" class="hover:text-white">Committee</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <p class="text-sm">The Pharmacy Association of Thailand</p>
+                    <p class="text-sm mt-2">Email: info@pat.or.th</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2026 FAPA Congress. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

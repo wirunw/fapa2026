@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Thailand | FAPA 2026 Congress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .dropdown-menu {
+            display: none;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block !important;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            right: 0;
+            height: 8px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <img src="https://i.postimg.cc/Dw4yGkgJ/FAPA-logo.jpg" alt="FAPA Logo" class="h-12 w-auto">
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">FAPA 2026</div>
+                            <div class="text-xs text-gray-600">November 3-7, 2026</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">
+                            About
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="welcome.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Welcome Messages</a>
+                            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">About FAPA & PAT</a>
+                            <a href="committee.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Organizing Committee</a>
+                        </div>
+                    </div>
+                    <a href="program.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Program</a>
+                    <a href="abstracts.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Call for Abstracts</a>
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center cursor-pointer">
+                            Info
+                            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 w-48 bg-white shadow-xl rounded-lg py-2 mt-0">
+                            <a href="venue.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Venue & Travel</a>
+                            <a href="sponsors.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Sponsors & Events</a>
+                        </div>
+                    </div>
+                    <a href="register.html" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition font-medium">Register</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="welcome.html" class="block py-2 text-gray-700 hover:text-blue-600">Welcome Messages</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">About FAPA & PAT</a>
+                <a href="committee.html" class="block py-2 text-gray-700 hover:text-blue-600">Organizing Committee</a>
+                <a href="program.html" class="block py-2 text-gray-700 hover:text-blue-600">Program</a>
+                <a href="abstracts.html" class="block py-2 text-gray-700 hover:text-blue-600">Call for Abstracts</a>
+                <a href="venue.html" class="block py-2 text-gray-700 hover:text-blue-600">Venue & Travel</a>
+                <a href="sponsors.html" class="block py-2 text-gray-700 hover:text-blue-600">Sponsors & Events</a>
+                <a href="register.html" class="block py-2 bg-blue-600 text-white text-center rounded-full hover:bg-blue-700">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-red-600 to-orange-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Discover Thailand</h1>
+                <p class="text-xl text-red-100">The Land of Smiles welcomes you to FAPA 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Introduction -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <p class="text-lg text-gray-600">
+                    Thailand, known as the "Land of Smiles," offers a unique blend of ancient traditions and modern hospitality. 
+                    Prepare for your visit to Bangkok and experience Thai culture, cuisine, and warm welcome.
+                </p>
+            </div>
+
+            <!-- Quick Facts -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="map-pin" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Capital</h3>
+                    <p class="text-gray-600">Bangkok</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="users" class="w-8 h-8 text-green-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Population</h3>
+                    <p class="text-gray-600">~70 million</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="message-circle" class="w-8 h-8 text-purple-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Language</h3>
+                    <p class="text-gray-600">Thai</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="banknote" class="w-8 h-8 text-orange-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Currency</h3>
+                    <p class="text-gray-600">Thai Baht (THB)</p>
+                </div>
+            </div>
+
+            <!-- Essential Information -->
+            <div class="grid lg:grid-cols-2 gap-8 mb-16">
+                
+                <!-- Visa Information -->
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <i data-lucide="passport" class="w-6 h-6 mr-2 text-blue-600"></i>
+                        Visa Information
+                    </h3>
+                    <div class="space-y-4">
+                        <p class="text-gray-700">
+                            Many nationalities can enter Thailand visa-free for tourism purposes. 
+                            Please check visa requirements based on your nationality.
+                        </p>
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <h4 class="font-semibold text-gray-900 mb-2">Visa on Arrival</h4>
+                            <p class="text-sm text-gray-700">Available for citizens of certain countries for stays up to 15-30 days.</p>
+                        </div>
+                        <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                            <h4 class="font-semibold text-gray-900 mb-2">Tourist Visa</h4>
+                            <p class="text-sm text-gray-700">Valid for 60 days, can be extended. Apply at Thai embassy in your country.</p>
+                        </div>
+                        <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                            <h4 class="font-semibold text-gray-900 mb-2">Invitation Letter</h4>
+                            <p class="text-sm text-gray-700">FAPA 2026 can provide an official invitation letter for visa applications.</p>
+                        </div>
+                        <a href="https://www.mfa.go.th/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold">
+                            <i data-lucide="external-link" class="w-4 h-4 mr-1"></i>
+                            Check Visa Requirements
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Weather & Climate -->
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <i data-lucide="cloud-sun" class="w-6 h-6 mr-2 text-orange-600"></i>
+                        Weather in November
+                    </h3>
+                    <div class="space-y-4">
+                        <p class="text-gray-700">
+                            November is one of the best times to visit Thailand. The weather is pleasant with cooler temperatures 
+                            and less rainfall during the cool season.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-orange-50 rounded-lg p-4">
+                                <div class="flex items-center mb-2">
+                                    <i data-lucide="thermometer" class="w-5 h-5 text-orange-600 mr-2"></i>
+                                    <span class="font-semibold text-gray-900">Temperature</span>
+                                </div>
+                                <p class="text-2xl font-bold text-orange-600">25-32°C</p>
+                                <p class="text-sm text-gray-600">77-90°F</p>
+                            </div>
+                            <div class="bg-blue-50 rounded-lg p-4">
+                                <div class="flex items-center mb-2">
+                                    <i data-lucide="droplets" class="w-5 h-5 text-blue-600 mr-2"></i>
+                                    <span class="font-semibold text-gray-900">Humidity</span>
+                                </div>
+                                <p class="text-2xl font-bold text-blue-600">65-75%</p>
+                                <p class="text-sm text-gray-600">Moderate</p>
+                            </div>
+                        </div>
+                        <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                            <h4 class="font-semibold text-gray-900 mb-2">What to Pack</h4>
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>• Light, breathable clothing</li>
+                                <li>• Sunscreen and sunglasses</li>
+                                <li>• Light jacket for air-conditioned venues</li>
+                                <li>• Comfortable walking shoes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Getting Around -->
+            <div class="bg-white rounded-2xl shadow-xl p-8 mb-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+                    <i data-lucide="train" class="w-6 h-6 inline mr-2 text-blue-600"></i>
+                    Getting Around Bangkok
+                </h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center p-6">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="train-front" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">BTS & MRT</h4>
+                        <p class="text-gray-600 text-sm">Modern sky train and metro system covering major areas of Bangkok. Clean, efficient, and air-conditioned.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="car" class="w-8 h-8 text-orange-600"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Taxi & Grab</h4>
+                        <p class="text-gray-600 text-sm">Metered taxis and ride-hailing apps (Grab) are widely available and affordable throughout Bangkok.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="bus" class="w-8 h-8 text-purple-600"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Airport Link</h4>
+                        <p class="text-gray-600 text-sm">Express train from Suvarnabhumi Airport to downtown Bangkok. Fast and convenient connection.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Attractions -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-center text-gray-900 mb-4">Must-Visit Attractions</h3>
+                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    Explore Bangkok's rich cultural heritage, modern attractions, and vibrant street life
+                </p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Grand Palace -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                        <div class="h-48 bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center">
+                            <i data-lucide="landmark" class="w-24 h-24 text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Grand Palace</h4>
+                            <p class="text-gray-600 text-sm mb-3">The most famous landmark in Bangkok. Home to the Emerald Buddha and stunning Thai architecture.</p>
+                            <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-semibold">Historic Site</span>
+                        </div>
+                    </div>
+
+                    <!-- Wat Pho -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                        <div class="h-48 bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
+                            <i data-lucide="flame" class="w-24 h-24 text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Wat Pho</h4>
+                            <p class="text-gray-600 text-sm mb-3">Famous for the giant Reclining Buddha and traditional Thai massage school.</p>
+                            <span class="inline-block px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-xs font-semibold">Temple</span>
+                        </div>
+                    </div>
+
+                    <!-- Chatuchak Market -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                        <div class="h-48 bg-gradient-to-br from-green-400 to-teal-500 flex items-center justify-center">
+                            <i data-lucide="shopping-bag" class="w-24 h-24 text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Chatuchak Market</h4>
+                            <p class="text-gray-600 text-sm mb-3">One of the world's largest weekend markets with over 15,000 stalls selling everything imaginable.</p>
+                            <span class="inline-block px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold">Shopping</span>
+                        </div>
+                    </div>
+
+                    <!-- Chao Phraya River -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                        <div class="h-48 bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center">
+                            <i data-lucide="waves" class="w-24 h-24 text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Chao Phraya River</h4>
+                            <p class="text-gray-600 text-sm mb-3">Take a river cruise to see Bangkok's landmarks from a different perspective.</p>
+                            <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold">River Cruise</span>
+                        </div>
+                    </div>
+
+                    <!-- Siam Paragon -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                        <div class="h-48 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center">
+                            <i data-lucide="building-2" class="w-24 h-24 text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Siam Paragon</h4>
+                            <p class="text-gray-600 text-sm mb-3">Luxury shopping mall in the heart of Bangkok with restaurants, cinema, and aquarium.</p>
+                            <span class="inline-block px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-semibold">Mall</span>
+                        </div>
+                    </div>
+
+                    <!-- Asiatique -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                        <div class="h-48 bg-gradient-to-br from-red-400 to-pink-500 flex items-center justify-center">
+                            <i data-lucide="ferris-wheel" class="w-24 h-24 text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Asiatique</h4>
+                            <p class="text-gray-600 text-sm mb-3">Riverside night market with shops, restaurants, and entertainment on the Chao Phraya River.</p>
+                            <span class="inline-block px-3 py-1 bg-red-100 text-red-800 rounded-full text-xs font-semibold">Night Market</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Thai Culture & Etiquette -->
+            <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 mb-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Thai Culture & Etiquette</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-gray-900 flex items-center">
+                            <i data-lucide="heart" class="w-5 h-5 mr-2 text-red-600"></i>
+                            Do's
+                        </h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 mr-2 text-green-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Greet with a "wai" (hands together in prayer position)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 mr-2 text-green-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Remove shoes before entering temples and homes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 mr-2 text-green-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Dress modestly when visiting temples</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 mr-2 text-green-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Show respect to the Royal Family and Buddha images</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-gray-900 flex items-center">
+                            <i data-lucide="alert-triangle" class="w-5 h-5 mr-2 text-orange-600"></i>
+                            Don'ts
+                        </h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i data-lucide="x" class="w-5 h-5 mr-2 text-red-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Don't touch anyone's head (considered most sacred part)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="x" class="w-5 h-5 mr-2 text-red-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Don't point your feet at people or Buddha images</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="x" class="w-5 h-5 mr-2 text-red-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Don't raise your voice or show anger in public</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="x" class="w-5 h-5 mr-2 text-red-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Don't step over people or their belongings</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Emergency Contacts -->
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                    <i data-lucide="phone" class="w-6 h-6 mr-2 text-red-600"></i>
+                    Emergency Contacts
+                </h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-red-50 rounded-lg p-4">
+                        <h4 class="font-bold text-gray-900 mb-2">Emergency Services</h4>
+                        <p class="text-2xl font-bold text-red-600 mb-1">191</p>
+                        <p class="text-sm text-gray-600">Police</p>
+                    </div>
+                    <div class="bg-orange-50 rounded-lg p-4">
+                        <h4 class="font-bold text-gray-900 mb-2">Medical Emergency</h4>
+                        <p class="text-2xl font-bold text-orange-600 mb-1">1669</p>
+                        <p class="text-sm text-gray-600">Ambulance</p>
+                    </div>
+                    <div class="bg-blue-50 rounded-lg p-4">
+                        <h4 class="font-bold text-gray-900 mb-2">Tourist Police</h4>
+                        <p class="text-2xl font-bold text-blue-600 mb-1">1155</p>
+                        <p class="text-sm text-gray-600">24/7 English Support</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">FAPA 2026</h3>
+                    <p class="text-sm">The 27th FAPA Congress in Bangkok, Thailand</p>
+                    <p class="text-sm mt-2">November 3-7, 2026</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="program.html" class="hover:text-white">Program</a></li>
+                        <li><a href="abstracts.html" class="hover:text-white">Abstracts</a></li>
+                        <li><a href="register.html" class="hover:text-white">Register</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Information</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="venue.html" class="hover:text-white">Venue</a></li>
+                        <li><a href="sponsors.html" class="hover:text-white">Sponsors</a></li>
+                        <li><a href="committee.html" class="hover:text-white">Committee</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <p class="text-sm">The Pharmacy Association of Thailand</p>
+                    <p class="text-sm mt-2">Email: info@pat.or.th</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2026 FAPA Congress. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
