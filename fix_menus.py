@@ -146,7 +146,7 @@ def get_mobile_menu(active_section, active_page):
         return 'gray-700 hover:text-blue-600'
     
     return f'''        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t max-h-screen overflow-y-auto">
             <div class="px-4 pt-2 pb-4 space-y-2">
                 <a href="index.html" class="block py-2 text-{get_mobile_class('Home')}">Home</a>
                 
