@@ -125,7 +125,7 @@ def get_desktop_menu(active_section, active_page):
                             Info
                             <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
                         </button>
-                        <div class="dropdown-menu absolute left-0 w-56 bg-white shadow-xl rounded-lg py-2 mt-0">
+                        <div class="dropdown-menu absolute right-0 w-56 bg-white shadow-xl rounded-lg py-2 mt-0">
                             <a href="news.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50{get_submenu_class('news')}">News & Updates</a>
                             <a href="faq.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50{get_submenu_class('faq')}">FAQ</a>
                             <a href="students.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50{get_submenu_class('students')}">Student Assistants</a>
